@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Drinks | Chill Cawfee Redesign</title>
+  <meta name="description" content="Explore our menu of comforting coffees, unapologetically rich caramel dreams, premium kava, and relaxing mocktail teas.">
+  <script>document.documentElement.classList.add('js')</script>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Inline Menu Tab Styles */
+    .menu-tabs {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      margin-bottom: 56px;
+    }
+    .menu-tab-btn {
+      background: none;
+      border: none;
+      font-family: var(--font-serif);
+      font-size: clamp(1.25rem, 3vw, 1.8rem);
+      font-weight: 600;
+      color: var(--color-text-muted);
+      cursor: pointer;
+      padding: 8px 24px;
+      border-bottom: 3px solid transparent;
+      transition: var(--transition-quick);
+    }
+    .menu-tab-btn:hover {
+      color: var(--color-terracotta);
+    }
+    .menu-tab-btn.active {
+      color: var(--color-terracotta);
+      border-bottom-color: var(--color-terracotta);
+    }
+    .menu-pane {
+      display: none;
+    }
+    .menu-pane.active {
+      display: grid;
+    }
+    .menu-grid-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+      margin-top: 20px;
+    }
+    .menu-item-row {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px dashed rgba(43, 26, 19, 0.15);
+      padding-bottom: 12px;
+      margin-bottom: 8px;
+    }
+    .menu-item-title {
+      font-family: var(--font-serif);
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--color-dark);
+    }
+    .menu-item-price {
+      font-family: var(--font-sans);
+      font-weight: 700;
+      color: var(--color-terracotta);
+    }
+    .menu-item-desc {
+      color: var(--color-text-muted);
+      font-size: 0.95rem;
+      max-width: 85%;
+    }
+    @media (max-width: 768px) {
+      .menu-grid-list {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Floating Aroma Background -->
+  <canvas id="aroma-canvas"></canvas>
+
+  <!-- Sticky Header -->
+  <header class="navbar">
+    <div class="navbar-container">
+      <a href="index.html" class="logo-link">
+        <img src="https://assets.zyrosite.com/kKuMz4O3W0xbbwAe/untitled-design-LO1NmizVwhW1nuXs.png" alt="Chill Cawfee Logo" class="logo-img">
+        <span>Chill Cawfee</span>
+      </a>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="menu.html" class="nav-link active">Our Drinks</a></li>
+          <li><a href="about.html" class="nav-link">Our Story</a></li>
+          <li><a href="community.html" class="nav-link">Community & Events</a></li>
+        </ul>
+      </nav>
+      <div>
+        <a href="https://www.ubereats.com/store/quigs-kava-lounge/8v0jd14UXYOxqRMc4G4RRA" target="_blank" class="btn btn-primary">Order Now</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Menu Hero -->
+  <section class="hero" style="min-height: 70vh;">
+    <div class="hero-grid">
+      <div class="hero-content animate-on-scroll stagger-1">
+        <span class="hero-tagline">Unapologetically Rich</span>
+        <h1 class="hero-title">Comforting Drinks Poured with Care</h1>
+        <p class="hero-description">Great coffee should be warm, sweet, and entirely unpretentious. Pull up a chair in our cozy Fishhawk living room and let Hunter pour you an unapologetically rich signature creation.</p>
+        <a href="#menu-tabs-section" class="btn btn-primary">Explore Menu</a>
+      </div>
+      <div class="hero-image-wrapper animate-on-scroll stagger-2">
+        <img src="https://assets.zyrosite.com/kKuMz4O3W0xbbwAe/carameldream-qRxZ2Y3XVr5d1qdP.jpg" alt="Rich Caramel Coffee Pour" class="hero-image">
+        <div class="hero-image-mask"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Menu Grid Section -->
+  <section class="section section-alt" id="menu-tabs-section">
+    <div class="section-container">
+      <!-- Interactive Tab Controls -->
+      <div class="menu-tabs animate-on-scroll">
+        <button class="menu-tab-btn active" data-tab="coffee-tab">Signature Coffees</button>
+        <button class="menu-tab-btn" data-tab="kava-tab">Quigs Kava &amp; Teas</button>
+      </div>
+
+      <!-- Coffee Tab Pane -->
+      <div class="menu-pane active" id="coffee-tab">
+        <div class="grid-3">
+          <div class="glass-card drink-card animate-on-scroll stagger-1">
+            <div class="drink-img-wrapper">
+              <img src="https://assets.zyrosite.com/kKuMz4O3W0xbbwAe/carameldream-qRxZ2Y3XVr5d1qdP.jpg" alt="Caramel Dream" class="drink-img">
+              <span class="drink-tag">Best Seller</span>
+            </div>
+            <div class="drink-info">
+              <span class="drink-meta">Sweet &amp; Smooth</span>
+              <h3 class="drink-name">Caramel Dream</h3>
+              <p class="drink-desc">Rich espresso layered with sweet caramel, velvety steamed milk, and a generous crown of real whipped cream poured fresh for you.</p>
+            </div>
+          </div>
+          <div class="glass-card drink-card animate-on-scroll stagger-2">
+            <div class="drink-img-wrapper">
+              <img src="https://assets.zyrosite.com/kKuMz4O3W0xbbwAe/whitechocolatedream-1-AmNLtSajddpM2S3U.jpg" alt="White Chocolate Dream" class="drink-img">
+              <span class="drink-tag">Velvety Cream</span>
+            </div>
+            <div class="drink-info">
+              <span class="drink-meta">Classic Comfort</span>
+              <h3 class="drink-name">White Chocolate Dream</h3>
+              <p class="drink-desc">Indulgent white chocolate melted slowly into hot espresso, finished with fresh whipped cream and sweet curls. A comforting neighborhood treat.</p>
+            </div>
+          </div>
+          <div class="glass-card drink-card animate-on-scroll stagger-3">
+            <div class="drink-img-wrapper">
+              <img src="https://assets.zyrosite.com/kKuMz4O3W0xbbwAe/dark-mocha-chocolate-dream-tngiOvc1iSBiEBly.webp" alt="Double Dark Mocha" class="drink-img">
+              <span class="drink-tag">Bold Cocoa</span>
+            </div>
+            <div class="drink-info">
+              <span class="drink-meta">Dark &amp; Bold</span>
+              <h3 class="drink-name">Double Dark Mocha</h3>
+              <p class="drink-desc">Made for the true chocolate lover. Double espresso blended with rich dark cocoa, steamed milk, and topped with chocolate-dusted whipped cream.</p>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top: 64px;" class="animate-on-scroll">
+          <h3 style="margin-bottom: 24px; text-align: center;">Coffee Classics</h3>
+          <div class="menu-grid-list">
+            <div>
+              <div class="menu-item-row">
+                <span class="menu-item-title">Fresh Brewed Drip</span>
+                <span class="menu-item-price">$3.50</span>
+              </div>
+              <p class="menu-item-desc">Our house blend, roasted locally and brewed fresh all day long.</p>
+            </div>
+            <div>
+              <div class="menu-item-row">
+                <span class="menu-item-title">Espresso Shot</span>
+                <span class="menu-item-price">$3.00</span>
+              </div>
+              <p class="menu-item-desc">Double shot of our smooth, rich house espresso blend.</p>
+            </div>
+            <div>
+              <div class="menu-item-row">
+                <span class="menu-item-title">Caffè Latte</span>
+                <span class="menu-item-price">$4.75</span>
+              </div>
+              <p class="menu-item-desc">Double espresso with steamed milk and a light layer of foam.</p>
+            </div>
+            <div>
+              <div class="menu-item-row">
+                <span class="menu-item-title">Cold Brew</span>
+                <span class="menu-item-price">$4.50</span>
+              </div>
+              <p class="menu-item-desc">Slow-steeped for 18 hours for an ultra-smooth, low-acid kick.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kava Tab Pane -->
+      <div class="menu-pane" id="kava-tab">
+        <div class="grid-3">
+          <div class="glass-card drink-card animate-on-scroll stagger-1">
+            <div class="drink-img-wrapper">
+              <img src="https://assets.zyrosite.com/kKuMz4O3W0xbbwAe/8vs8e7-EMsYqQtOTAsHGOFr.png" alt="Classic Kava Shell" class="drink-img">
+              <span class="drink-tag">Traditional</span>
+            </div>
+            <div class="drink-info">
+              <span class="drink-meta">Root Drink</span>
+              <h3 class="drink-name">Vanuatu Kava Shell</h3>
+              <p class="drink-desc">Premium Vanuatu kava root powder steeped traditionally. Earthy, relaxing, and brings a nice lip-numbing chill vibe.</p>
+            </div>
+          </div>
+          <div class="glass-card drink-card animate-on-scroll stagger-2">
+            <div class="drink-img-wrapper">
+              <img src="https://assets.zyrosite.com/kKuMz4O3W0xbbwAe/open-mic-background-april-iW9hh3AVquxCFB11.JPG" alt="Botanical Mocktail Tea" class="drink-img">
+              <span class="drink-tag">Fruity &amp; Light</span>
+            </div>
+            <div class="drink-info">
+              <span class="drink-meta">Botanical Blend</span>
+              <h3 class="drink-name">Quigs Sunset Elixir</h3>
+              <p class="drink-desc">A refreshing blend of herbal tea, tropical juice, and a gentle botanical kick. Designed to ease stress and elevate conversation.</p>
+            </div>
+          </div>
+          <div class="glass-card drink-card animate-on-scroll stagger-3">
+            <div class="drink-img-wrapper">
+              <img src="https://assets.zyrosite.com/kKuMz4O3W0xbbwAe/carameldream-qRxZ2Y3XVr5d1qdP.jpg" alt="Sweetened Kava Elixir" class="drink-img">
+              <span class="drink-tag">Sweet Cream</span>
+            </div>
+            <div class="drink-info">
+              <span class="drink-meta">Indulgent Chill</span>
+              <h3 class="drink-name">Caramel Cawfee Kava</h3>
+              <p class="drink-desc">Our signature twist combining traditionally prepared kava with chilled house coffee, sweet caramel drizzle, and dairy-free whip.</p>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top: 64px;" class="animate-on-scroll">
+          <h3 style="margin-bottom: 24px; text-align: center;">Mocktail Teas &amp; Botanicals</h3>
+          <div class="menu-grid-list">
+            <div>
+              <div class="menu-item-row">
+                <span class="menu-item-title">Traditional Double Shell</span>
+                <span class="menu-item-price">$7.00</span>
+              </div>
+              <p class="menu-item-desc">A double pour of our traditional root brew served in a coconut shell.</p>
+            </div>
+            <div>
+              <div class="menu-item-row">
+                <span class="menu-item-title">Blueberry Lavender Mocktail</span>
+                <span class="menu-item-price">$6.50</span>
+              </div>
+              <p class="menu-item-desc">Soothing lavender flower tea combined with sweet blueberry puree and club soda.</p>
+            </div>
+            <div>
+              <div class="menu-item-row">
+                <span class="menu-item-title">Ginger Mint Botanical</span>
+                <span class="menu-item-price">$6.00</span>
+              </div>
+              <p class="menu-item-desc">Spicy ginger, fresh muddled mint, lime, and our herbal relaxing infusion.</p>
+            </div>
+            <div>
+              <div class="menu-item-row">
+                <span class="menu-item-title">Nitro Botanical Draft</span>
+                <span class="menu-item-price">$5.50</span>
+              </div>
+              <p class="menu-item-desc">Creamy nitro-infused botanical tea served ice cold on tap.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Philosophy Section -->
+  <section class="section section-dark text-center" style="padding: 120px 40px;">
+    <div class="section-container animate-on-scroll">
+      <span class="section-tagline" style="color: var(--color-accent);">Our Philosophy</span>
+      <h2 style="font-size: clamp(2rem, 3.5vw, 2.8rem); max-width: 800px; margin: 24px auto 36px auto; font-style: italic; font-weight: 300;">&ldquo;Great coffee doesn&rsquo;t have to be intimidating to be absolutely delicious. We skip the snobbery and focus on making every single cup feel like a warm, comforting welcome to our neighborhood.&rdquo;</h2>
+      <p style="font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-accent-light);">Lisa Henney, Co-Founder</p>
+    </div>
+  </section>
+
+  <!-- CTA Banner Section -->
+  <section class="section">
+    <div class="section-container">
+      <div class="cta-banner animate-on-scroll">
+        <h2>Ready for a Caramel Dream?</h2>
+        <p>We are open daily at our new home in Lithia. Pull up a chair, catch up with Lisa and Hunter, and enjoy a rich drink made just for you.</p>
+        <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
+          <a href="https://maps.app.goo.gl/ACGVDDwkX2eh1vUDA" target="_blank" class="btn btn-accent">Find Our Shop</a>
+          <a href="https://www.ubereats.com/store/quigs-kava-lounge/8v0jd14UXYOxqRMc4G4RRA" target="_blank" class="btn btn-secondary" style="border-color: var(--color-text-light); color: var(--color-text-light);">Order Delivery</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <h3>Chill Cawfee</h3>
+        <p>Fishhawk's neighborhood living room. Relocated to Lithia, Est. 2020. Rebuilding the physical third place.</p>
+        <p style="font-size: 0.85rem; color: var(--color-accent);">Poured by Hunter. Welcomed by Lisa.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Navigation</h4>
+        <ul class="footer-menu">
+          <li><a href="index.html" class="footer-link">Home</a></li>
+          <li><a href="menu.html" class="footer-link">Our Drinks</a></li>
+          <li><a href="about.html" class="footer-link">Our Story</a></li>
+          <li><a href="community.html" class="footer-link">Community & Events</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Find the Shop</h4>
+        <address class="footer-address">
+          <p>16741 Fishhawk Blvd, Lithia, FL 33547</p>
+          <p>lisa@chillcawfee.com</p>
+          <p><a href="https://maps.app.goo.gl/ACGVDDwkX2eh1vUDA" target="_blank" class="footer-accent-link">Get Directions &rarr;</a></p>
+        </address>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Chill Cawfee. All rights reserved.</p>
+      <div class="social-links">
+        <a href="#" class="social-icon">FB</a>
+        <a href="#" class="social-icon">IG</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+  <script>
+    // Menu tab switching logic
+    document.addEventListener('DOMContentLoaded', () => {
+      const tabBtns = document.querySelectorAll('.menu-tab-btn');
+      const tabPanes = document.querySelectorAll('.menu-pane');
+
+      tabBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const tabId = btn.getAttribute('data-tab');
+
+          // Reset buttons
+          tabBtns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+
+          // Reset panes
+          tabPanes.forEach(p => p.classList.remove('active'));
+          const targetPane = document.getElementById(tabId);
+          if (targetPane) {
+            targetPane.classList.add('active');
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>

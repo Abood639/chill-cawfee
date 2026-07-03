@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Community & Events | Chill Cawfee Redesign</title>
+  <meta name="description" content="Skip the screen and pull up a chair. Connect at Chill Cawfee's business masterminds, trivia game nights, and open mic evenings.">
+  <script>document.documentElement.classList.add('js')</script>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Custom Interactive Event Cards styling */
+    .weekly-cards-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+      margin-top: 40px;
+    }
+    .event-card {
+      cursor: pointer;
+      transition: var(--transition-smooth);
+    }
+    .event-card:hover {
+      transform: translateY(-8px);
+    }
+    .event-day {
+      font-family: var(--font-serif);
+      font-size: 1.6rem;
+      color: var(--color-terracotta);
+      margin-bottom: 4px;
+    }
+    .event-time {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--color-accent);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 20px;
+      display: block;
+    }
+    .event-title {
+      font-size: 1.35rem;
+      margin-bottom: 12px;
+    }
+    .event-description {
+      font-size: 0.95rem;
+      color: var(--color-text-muted);
+      line-height: 1.6;
+    }
+    .event-interactive-hint {
+      margin-top: 24px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--color-terracotta);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .event-details-drawer {
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+      transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+      border-top: 1px dashed rgba(43, 26, 19, 0);
+      padding-top: 0;
+      margin-top: 0;
+    }
+    .event-card.active .event-details-drawer {
+      max-height: 250px;
+      opacity: 1;
+      border-top-color: rgba(43, 26, 19, 0.1);
+      padding-top: 20px;
+      margin-top: 20px;
+    }
+    .event-card.active .event-interactive-hint span {
+      transform: rotate(180deg);
+    }
+    .event-interactive-hint span {
+      display: inline-block;
+      transition: transform 0.3s ease;
+    }
+    @media (max-width: 1024px) {
+      .weekly-cards-container {
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Floating Aroma Background -->
+  <canvas id="aroma-canvas"></canvas>
+
+  <!-- Sticky Header -->
+  <header class="navbar">
+    <div class="navbar-container">
+      <a href="index.html" class="logo-link">
+        <img src="https://assets.zyrosite.com/kKuMz4O3W0xbbwAe/untitled-design-LO1NmizVwhW1nuXs.png" alt="Chill Cawfee Logo" class="logo-img">
+        <span>Chill Cawfee</span>
+      </a>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="menu.html" class="nav-link">Our Drinks</a></li>
+          <li><a href="about.html" class="nav-link">Our Story</a></li>
+          <li><a href="community.html" class="nav-link active">Community & Events</a></li>
+        </ul>
+      </nav>
+      <div>
+        <a href="https://maps.app.goo.gl/ACGVDDwkX2eh1vUDA" target="_blank" class="btn btn-primary">Find Us</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Community Hero -->
+  <section class="hero" style="min-height: 70vh;">
+    <div class="hero-grid">
+      <div class="hero-content animate-on-scroll stagger-1">
+        <span class="hero-tagline">Our Third Place</span>
+        <h1 class="hero-title">Where Fishhawk Comes Together</h1>
+        <p class="hero-description">Skip the screen and pull up a chair. From local masterminds to lively game nights, we host weekly gatherings designed to turn neighbors into lifelong friends.</p>
+        <a href="#schedule-section" class="btn btn-primary">View Schedule</a>
+      </div>
+      <div class="hero-image-wrapper animate-on-scroll stagger-2">
+        <img src="https://assets.zyrosite.com/kKuMz4O3W0xbbwAe/open-mic-background-april-iW9hh3AVquxCFB11.JPG" alt="Community Gathering at Chill Cawfee" class="hero-image">
+        <div class="hero-image-mask"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Weekly Schedule Section -->
+  <section class="section section-alt" id="schedule-section">
+    <div class="section-container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-tagline">Weekly Schedule</span>
+        <h2 class="section-title">The Weekly Lineup</h2>
+        <p class="section-desc">There is always a seat saved for you. Click on any event card below to expand session details and timings.</p>
+      </div>
+
+      <div class="weekly-cards-container">
+        <!-- Event Card 1 -->
+        <div class="glass-card event-card active animate-on-scroll stagger-1">
+          <div class="event-day">Wednesdays &amp; Fridays</div>
+          <span class="event-time">Morning Sessions</span>
+          <h3 class="event-title">Masterminds &amp; Networking</h3>
+          <p class="event-description">Connect with local builders, creators, and business leaders in real life.</p>
+          <div class="event-details-drawer">
+            <p class="event-description" style="font-weight: 500; color: var(--color-dark); margin-bottom: 8px;">Founders Table:</p>
+            <p class="event-description">Wednesdays at 12:30 PM &amp; Fridays at 8:00 AM. Meet remote workers, small business owners, and local founders to exchange ideas, solve challenges, and spark real partnerships over rich coffee.</p>
+          </div>
+          <div class="event-interactive-hint">
+            View Timing Details <span>&darr;</span>
+          </div>
+        </div>
+
+        <!-- Event Card 2 -->
+        <div class="glass-card event-card animate-on-scroll stagger-2">
+          <div class="event-day">Thursdays &amp; Saturdays</div>
+          <span class="event-time">Evening Gatherings</span>
+          <h3 class="event-title">Game Nights &amp; Trivia</h3>
+          <p class="event-description">Unplug and enjoy some friendly competition with your Fishhawk neighbors.</p>
+          <div class="event-details-drawer">
+            <p class="event-description" style="font-weight: 500; color: var(--color-dark); margin-bottom: 8px;">Weekly Play:</p>
+            <p class="event-description">Bring your favorite board games or join a welcoming table. Saturday nights feature charity poker tournaments supporting local Lithia and Fishhawk non-profit organizations. Hunter pours custom creations all evening.</p>
+          </div>
+          <div class="event-interactive-hint">
+            View Timing Details <span>&darr;</span>
+          </div>
+        </div>
+
+        <!-- Event Card 3 -->
+        <div class="glass-card event-card animate-on-scroll stagger-3">
+          <div class="event-day">Monthly Sunday</div>
+          <span class="event-time">Night of Expression</span>
+          <h3 class="event-title">Spoken Word &amp; Theater</h3>
+          <p class="event-description">Experience local artistic talents inside a cozy, acoustic setting.</p>
+          <div class="event-details-drawer">
+            <p class="event-description" style="font-weight: 500; color: var(--color-dark); margin-bottom: 8px;">Creative Stage:</p>
+            <p class="event-description">Join us once a month on Sunday evening to listen to local poets, acoustic singer-songwriters, and storytellers. An intimate, warm living room setting designed for genuine connection and local expression.</p>
+          </div>
+          <div class="event-interactive-hint">
+            View Timing Details <span>&darr;</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Open Groups Section -->
+  <section class="section">
+    <div class="section-container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-tagline">Our Groups</span>
+        <h2 class="section-title">Gatherings Open to All</h2>
+        <p class="section-desc">No membership dues, no strict agendas. Just real people meeting in real life over comforting, rich drinks.</p>
+      </div>
+
+      <div class="grid-3">
+        <!-- Group 1 -->
+        <div class="glass-card animate-on-scroll stagger-1" style="display: flex; flex-direction: column;">
+          <span class="drink-meta" style="margin-bottom: 12px;">Entrepreneurs</span>
+          <h3 style="font-size: 1.4rem; margin-bottom: 12px; color: var(--color-terracotta);">Business Mastermind</h3>
+          <p class="event-description" style="flex-grow: 1;">A morning group of local builders, creators, and professionals sharing real-world strategies, business advice, and genuine handshakes.</p>
+        </div>
+
+        <!-- Group 2 -->
+        <div class="glass-card animate-on-scroll stagger-2" style="display: flex; flex-direction: column;">
+          <span class="drink-meta" style="margin-bottom: 12px;">Community</span>
+          <h3 style="font-size: 1.4rem; margin-bottom: 12px; color: var(--color-terracotta);">Book Clubs &amp; Theater</h3>
+          <p class="event-description" style="flex-grow: 1;">Diving into monthly reads and hosting local stage readings. Perfect for creative minds looking for a physical third place.</p>
+        </div>
+
+        <!-- Group 3 -->
+        <div class="glass-card animate-on-scroll stagger-3" style="display: flex; flex-direction: column;">
+          <span class="drink-meta" style="margin-bottom: 12px;">Social</span>
+          <h3 style="font-size: 1.4rem; margin-bottom: 12px; color: var(--color-terracotta);">Men's Meetups</h3>
+          <p class="event-description" style="flex-grow: 1;">A relaxed space for guys in the community to catch up, talk life, and enjoy a Double Dark Mocha together.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Review / Quote Section -->
+  <section class="section section-dark" style="padding: 120px 40px;">
+    <div class="section-container text-center animate-on-scroll">
+      <span class="section-tagline" style="color: var(--color-accent);">Resident Spotlight</span>
+      <h2 style="font-size: clamp(1.8rem, 3vw, 2.5rem); max-width: 800px; margin: 24px auto 32px auto; font-style: italic; font-weight: 300;">&ldquo;Chill Cawfee isn't just where I get my morning drink&mdash;it's where I found my community when we moved to Fishhawk.&rdquo;</h2>
+      <p style="font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-accent-light);">Sarah M., Lithia Resident</p>
+    </div>
+  </section>
+
+  <!-- Directions CTA -->
+  <section class="section">
+    <div class="section-container">
+      <div class="cta-banner animate-on-scroll">
+        <h2>Pull Up a Chair Today</h2>
+        <p>We are located in the heart of Lithia, ready to welcome you with custom drinks and friendly faces.</p>
+        <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
+          <a href="https://maps.app.goo.gl/ACGVDDwkX2eh1vUDA" target="_blank" class="btn btn-accent">Get Directions</a>
+          <a href="menu.html" class="btn btn-secondary" style="border-color: var(--color-text-light); color: var(--color-text-light);">View Menu</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <h3>Chill Cawfee</h3>
+        <p>Fishhawk's neighborhood living room. Relocated to Lithia, Est. 2020. Rebuilding the physical third place.</p>
+        <p style="font-size: 0.85rem; color: var(--color-accent);">Poured by Hunter. Welcomed by Lisa.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Navigation</h4>
+        <ul class="footer-menu">
+          <li><a href="index.html" class="footer-link">Home</a></li>
+          <li><a href="menu.html" class="footer-link">Our Drinks</a></li>
+          <li><a href="about.html" class="footer-link">Our Story</a></li>
+          <li><a href="community.html" class="footer-link">Community & Events</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Find the Shop</h4>
+        <address class="footer-address">
+          <p>16741 Fishhawk Blvd, Lithia, FL 33547</p>
+          <p>lisa@chillcawfee.com</p>
+          <p><a href="https://maps.app.goo.gl/ACGVDDwkX2eh1vUDA" target="_blank" class="footer-accent-link">Get Directions &rarr;</a></p>
+        </address>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Chill Cawfee. All rights reserved.</p>
+      <div class="social-links">
+        <a href="#" class="social-icon">FB</a>
+        <a href="#" class="social-icon">IG</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+  <script>
+    // Event card toggle handler (expanding event details drawer)
+    document.addEventListener('DOMContentLoaded', () => {
+      const eventCards = document.querySelectorAll('.event-card');
+      eventCards.forEach(card => {
+        card.addEventListener('click', () => {
+          const isActive = card.classList.contains('active');
+          
+          // Collapse all cards first
+          eventCards.forEach(c => c.classList.remove('active'));
+          
+          // Toggle current
+          if (!isActive) {
+            card.classList.add('active');
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
