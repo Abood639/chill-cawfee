@@ -218,22 +218,33 @@
           <h3 style="font-size: 1.8rem; margin-top: 8px;">Match Your Coffee Taste</h3>
           <p class="section-desc" style="font-size: 0.95rem;">Drag the sliders below to reveal your ideal Chill Cawfee drink recommendation.</p>
         </div>
-        <div class="matcher-controls">
-          <div class="slider-group">
+          <div class="slider-group" style="margin-bottom: 24px;">
             <div class="slider-label-row">
-              <span>Mild & Smooth</span>
-              <span>Rich & Bold</span>
-            </div>
-            <input type="range" id="boldness-slider" min="3" max="10" value="6" class="matcher-slider">
-          </div>
-          <div class="slider-group">
-            <div class="slider-label-row">
-              <span>Less Sweet</span>
+              <span>Bold in Black</span>
               <span>Dessert Sweet</span>
             </div>
-            <input type="range" id="sweetness-slider" min="3" max="10" value="6" class="matcher-slider">
+            <input type="range" id="drink-slider" min="1" max="18" value="9" step="1" list="drink-ticks" class="matcher-slider">
+            <datalist id="drink-ticks">
+              <option value="1"></option>
+              <option value="2"></option>
+              <option value="3"></option>
+              <option value="4"></option>
+              <option value="5"></option>
+              <option value="6"></option>
+              <option value="7"></option>
+              <option value="8"></option>
+              <option value="9"></option>
+              <option value="10"></option>
+              <option value="11"></option>
+              <option value="12"></option>
+              <option value="13"></option>
+              <option value="14"></option>
+              <option value="15"></option>
+              <option value="16"></option>
+              <option value="17"></option>
+              <option value="18"></option>
+            </datalist>
           </div>
-        </div>
         <div id="matcher-result-display" class="matcher-result">
           <!-- Populated by JavaScript -->
         </div>

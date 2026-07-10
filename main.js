@@ -146,88 +146,139 @@ function initAromaCanvas() {
   animate();
 }
 
-// Drink Matcher Database
+// Drink Matcher Database (ordered from Bold in Black to Dessert Sweet)
 const DRINK_DATABASE = [
   {
-    name: "Caramel Dream",
-    desc: "A rich, velvety espresso blend layered with thick caramel sauce, steamed milk, and topped with fresh whipped cream.",
-    img: "https://assets.zyrosite.com/kKuMz4O3W0xbbwAe/carameldream-qRxZ2Y3XVr5d1qdP.jpg",
-    sweet: 8,
-    bold: 6
+    name: "Black Espresso",
+    desc: "A bold, intense double shot of our premium signature house espresso blend. Straight and strong.",
+    img: "https://assets.zyrosite.com/kKuMz4O3W0xbbwAe/8vs8e7-EMsYqQtOTAsHGOFr.png"
   },
   {
-    name: "White Chocolate Dream",
-    desc: "Creamy white chocolate melted into freshly pulled espresso, finished with a delicate dusting of cocoa.",
-    img: "https://assets.zyrosite.com/kKuMz4O3W0xbbwAe/whitechocolatedream-1-AmNLtSajddpM2S3U.jpg",
-    sweet: 9,
-    bold: 4
+    name: "Drip Coffee",
+    desc: "Our premium signature house blend, locally roasted and brewed fresh all day long. Classic and unpretentious.",
+    img: "https://assets.zyrosite.com/kKuMz4O3W0xbbwAe/8vs8e7-EMsYqQtOTAsHGOFr.png"
+  },
+  {
+    name: "Nitro Coffee",
+    desc: "Creamy, smooth cold brew coffee infused with nitrogen and served draft-cold for an ultra-smooth finish.",
+    img: "https://assets.zyrosite.com/kKuMz4O3W0xbbwAe/8vs8e7-EMsYqQtOTAsHGOFr.png"
+  },
+  {
+    name: "Americano",
+    desc: "A bold double shot of our premium house espresso blend lengthened with hot water. Clean and robust.",
+    img: "https://assets.zyrosite.com/kKuMz4O3W0xbbwAe/8vs8e7-EMsYqQtOTAsHGOFr.png"
+  },
+  {
+    name: "Cafe Latte",
+    desc: "Double shot of espresso blended with silky steamed milk and finished with a thin layer of velvety foam.",
+    img: "https://assets.zyrosite.com/kKuMz4O3W0xbbwAe/8vs8e7-EMsYqQtOTAsHGOFr.png"
+  },
+  {
+    name: "Cappuccino",
+    desc: "Double espresso topped with equal parts steamed milk and thick, luxurious warm milk foam.",
+    img: "https://assets.zyrosite.com/kKuMz4O3W0xbbwAe/8vs8e7-EMsYqQtOTAsHGOFr.png"
+  },
+  {
+    name: "Italian Macchiato",
+    desc: "A bold, concentrated double shot of espresso marked with a single dollop of warm milk foam.",
+    img: "https://assets.zyrosite.com/kKuMz4O3W0xbbwAe/8vs8e7-EMsYqQtOTAsHGOFr.png"
+  },
+  {
+    name: "Cafe Mocha",
+    desc: "Espresso combined with dark cocoa syrup, steamed milk, and a light dusting of chocolate powder.",
+    img: "https://assets.zyrosite.com/kKuMz4O3W0xbbwAe/8vs8e7-EMsYqQtOTAsHGOFr.png"
+  },
+  {
+    name: "Cafe Con leche",
+    desc: "Traditional, strongly brewed espresso mixed with sweetened steamed milk for a smooth, balanced kick.",
+    img: "https://assets.zyrosite.com/kKuMz4O3W0xbbwAe/8vs8e7-EMsYqQtOTAsHGOFr.png"
+  },
+  {
+    name: "Cubano Nitro",
+    desc: "Rich espresso combined with nitrogen cold brew, sweetened condensed milk, and topped with fresh whipped cream.",
+    img: "https://assets.zyrosite.com/kKuMz4O3W0xbbwAe/8vs8e7-EMsYqQtOTAsHGOFr.png"
+  },
+  {
+    name: "Honey Haze",
+    desc: "A comforting blend of double espresso, vanilla, natural sweet honey, and creamy oat milk.",
+    img: "https://assets.zyrosite.com/kKuMz4O3W0xbbwAe/8vs8e7-EMsYqQtOTAsHGOFr.png"
+  },
+  {
+    name: "Cinnamon Toast Latte",
+    desc: "Espresso with brown sugar, sweet vanilla, warm cinnamon, and textured whole milk. Tastes like childhood comfort.",
+    img: "https://assets.zyrosite.com/kKuMz4O3W0xbbwAe/8vs8e7-EMsYqQtOTAsHGOFr.png"
+  },
+  {
+    name: "Matcha",
+    desc: "Premium, finely ground green tea matcha prepared with steamed milk and a touch of sweetness.",
+    img: "https://assets.zyrosite.com/kKuMz4O3W0xbbwAe/8vs8e7-EMsYqQtOTAsHGOFr.png"
+  },
+  {
+    name: "Chai",
+    desc: "Steamed black tea infused with warm, aromatic spices (cinnamon, cardamom, ginger), milk, and honey.",
+    img: "https://assets.zyrosite.com/kKuMz4O3W0xbbwAe/8vs8e7-EMsYqQtOTAsHGOFr.png"
   },
   {
     name: "Double Dark Mocha",
-    desc: "For the true chocolate lover, featuring two shots of espresso drowned in rich, dark cocoa and steamed milk.",
-    img: "https://assets.zyrosite.com/kKuMz4O3W0xbbwAe/dark-mocha-chocolate-dream-tngiOvc1iSBiEBly.webp",
-    sweet: 4,
-    bold: 9
+    desc: "For the dark chocolate lover. Bold double espresso blended with rich dark cocoa and topped with chocolate-dusted whipped cream.",
+    img: "https://assets.zyrosite.com/kKuMz4O3W0xbbwAe/dark-mocha-chocolate-dream-tngiOvc1iSBiEBly.webp"
   },
   {
-    name: "Signature Classic",
-    desc: "Coffee should be comforting, rich, and completely unpretentious. Hunter pours each of our signature custom creations daily with real whipped cream and decadent drizzles.",
-    img: "https://assets.zyrosite.com/kKuMz4O3W0xbbwAe/8vs8e7-EMsYqQtOTAsHGOFr.png",
-    sweet: 5,
-    bold: 6
+    name: "Caramel Dream",
+    desc: "Our signature best-seller. Double espresso layered with sweet caramel, steamed milk, and a generous crown of whipped cream.",
+    img: "https://assets.zyrosite.com/kKuMz4O3W0xbbwAe/carameldream-qRxZ2Y3XVr5d1qdP.jpg"
+  },
+  {
+    name: "White Chocolate Dream",
+    desc: "Indulgent white chocolate melted slowly into hot espresso, finished with warm milk and fresh whipped cream.",
+    img: "https://assets.zyrosite.com/kKuMz4O3W0xbbwAe/whitechocolatedream-1-AmNLtSajddpM2S3U.jpg"
+  },
+  {
+    name: "Tuxedo Dream Cubano",
+    desc: "The ultimate dessert treat. Iced coffee featuring a decadent swirl of white and dark chocolate drizzles, marshmallow, milk, and whipped cream.",
+    img: "https://assets.zyrosite.com/kKuMz4O3W0xbbwAe/8vs8e7-EMsYqQtOTAsHGOFr.png"
   }
 ];
 
 function initDrinkMatcher() {
-  const sweetSlider = document.getElementById('sweetness-slider');
-  const boldSlider = document.getElementById('boldness-slider');
+  const slider = document.getElementById('drink-slider');
   const resultContainer = document.getElementById('matcher-result-display');
 
-  if (!sweetSlider || !boldSlider || !resultContainer) return;
+  if (!slider || !resultContainer) return;
+
+  let currentDrinkName = '';
 
   const calculateMatch = () => {
-    const userSweet = parseInt(sweetSlider.value);
-    const userBold = parseInt(boldSlider.value);
+    // Convert slider value (1-18) to array index (0-17)
+    const val = parseInt(slider.value);
+    const index = Math.min(Math.max(val - 1, 0), DRINK_DATABASE.length - 1);
+    const drink = DRINK_DATABASE[index];
 
-    let bestMatch = null;
-    let minDiff = Infinity;
+    // Only update if the selected drink changes to prevent constant blinking
+    if (drink.name === currentDrinkName) return;
+    currentDrinkName = drink.name;
 
-    DRINK_DATABASE.forEach(drink => {
-      // Euclidean distance in 2D preference space
-      const diffSweet = drink.sweet - userSweet;
-      const diffBold = drink.bold - userBold;
-      const totalDiff = Math.sqrt(diffSweet * diffSweet + diffBold * diffBold);
-
-      if (totalDiff < minDiff) {
-        minDiff = totalDiff;
-        bestMatch = drink;
-      }
-    });
-
-    if (bestMatch) {
-      // Add a fade transition out/in
-      resultContainer.style.opacity = 0;
-      setTimeout(() => {
-        resultContainer.innerHTML = `
-          <div class="match-display">
-            <img src="${bestMatch.img}" alt="${bestMatch.name}" class="match-img">
-            <div class="match-info-box">
-              <span class="drink-meta">Your Perfect Cup</span>
-              <h4>${bestMatch.name}</h4>
-              <p>${bestMatch.desc}</p>
-              <div style="margin-top: 15px;">
-                <a href="menu.html" class="btn btn-accent" style="padding: 8px 16px; font-size: 0.85rem;">Order Now</a>
-              </div>
+    // Fade transition out/in
+    resultContainer.style.opacity = 0;
+    setTimeout(() => {
+      resultContainer.innerHTML = `
+        <div class="match-display">
+          <img src="${drink.img}" alt="${drink.name}" class="match-img">
+          <div class="match-info-box">
+            <span class="drink-meta">Your Perfect Cup</span>
+            <h4>${drink.name}</h4>
+            <p>${drink.desc}</p>
+            <div style="margin-top: 15px;">
+              <a href="menu.html" class="btn btn-accent" style="padding: 8px 16px; font-size: 0.85rem;">Order Now</a>
             </div>
           </div>
-        `;
-        resultContainer.style.opacity = 1;
-      }, 200);
-    }
+        </div>
+      `;
+      resultContainer.style.opacity = 1;
+    }, 150);
   };
 
-  sweetSlider.addEventListener('input', calculateMatch);
-  boldSlider.addEventListener('input', calculateMatch);
+  slider.addEventListener('input', calculateMatch);
   calculateMatch(); // Initial run
 }
 
