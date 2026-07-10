@@ -85,6 +85,29 @@
         grid-template-columns: 1fr;
       }
     }
+    .menu-image-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+      width: 100%;
+    }
+    .menu-board-img {
+      max-width: 100%;
+      height: auto;
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-md);
+      border: 1px solid rgba(11, 25, 95, 0.1);
+      transition: var(--transition-smooth);
+    }
+    .menu-board-img:hover {
+      transform: scale(1.005);
+      box-shadow: var(--shadow-lg);
+    }
+    .menu-actions {
+      margin-top: 8px;
+      margin-bottom: 24px;
+    }
   </style>
 </head>
 <body>
@@ -132,81 +155,17 @@
   <!-- Main Menu Grid Section -->
   <section class="section section-alt" id="menu-tabs-section">
     <div class="section-container">
-      <!-- Interactive Tab Controls -->
       <div class="menu-tabs animate-on-scroll">
-        <button class="menu-tab-btn active" data-tab="coffee-tab">Signature Coffees</button>
+        <button class="menu-tab-btn active" data-tab="coffee-tab">Coffee &amp; Espresso</button>
         <button class="menu-tab-btn" data-tab="kava-tab">Quigs Kava &amp; Teas</button>
       </div>
 
       <!-- Coffee Tab Pane -->
       <div class="menu-pane active" id="coffee-tab">
-        <div class="grid-3">
-          <div class="glass-card drink-card animate-on-scroll stagger-1">
-            <div class="drink-img-wrapper">
-              <img src="https://assets.zyrosite.com/kKuMz4O3W0xbbwAe/carameldream-qRxZ2Y3XVr5d1qdP.jpg" alt="Caramel Dream" class="drink-img">
-              <span class="drink-tag">Best Seller</span>
-            </div>
-            <div class="drink-info">
-              <span class="drink-meta">Sweet &amp; Smooth</span>
-              <h3 class="drink-name">Caramel Dream</h3>
-              <p class="drink-desc">Rich espresso layered with sweet caramel, velvety steamed milk, and a generous crown of real whipped cream poured fresh for you.</p>
-            </div>
-          </div>
-          <div class="glass-card drink-card animate-on-scroll stagger-2">
-            <div class="drink-img-wrapper">
-              <img src="https://assets.zyrosite.com/kKuMz4O3W0xbbwAe/whitechocolatedream-1-AmNLtSajddpM2S3U.jpg" alt="White Chocolate Dream" class="drink-img">
-              <span class="drink-tag">Velvety Cream</span>
-            </div>
-            <div class="drink-info">
-              <span class="drink-meta">Classic Comfort</span>
-              <h3 class="drink-name">White Chocolate Dream</h3>
-              <p class="drink-desc">Indulgent white chocolate melted slowly into hot espresso, finished with fresh whipped cream and sweet curls. A comforting neighborhood treat.</p>
-            </div>
-          </div>
-          <div class="glass-card drink-card animate-on-scroll stagger-3">
-            <div class="drink-img-wrapper">
-              <img src="https://assets.zyrosite.com/kKuMz4O3W0xbbwAe/dark-mocha-chocolate-dream-tngiOvc1iSBiEBly.webp" alt="Double Dark Mocha" class="drink-img">
-              <span class="drink-tag">Bold Cocoa</span>
-            </div>
-            <div class="drink-info">
-              <span class="drink-meta">Dark &amp; Bold</span>
-              <h3 class="drink-name">Double Dark Mocha</h3>
-              <p class="drink-desc">Made for the true chocolate lover. Double espresso blended with rich dark cocoa, steamed milk, and topped with chocolate-dusted whipped cream.</p>
-            </div>
-          </div>
-        </div>
-
-        <div style="margin-top: 64px;" class="animate-on-scroll">
-          <h3 style="margin-bottom: 24px; text-align: center;">Coffee Classics</h3>
-          <div class="menu-grid-list">
-            <div>
-              <div class="menu-item-row">
-                <span class="menu-item-title">Fresh Brewed Drip</span>
-                <span class="menu-item-price">$3.50</span>
-              </div>
-              <p class="menu-item-desc">Our house blend, roasted locally and brewed fresh all day long.</p>
-            </div>
-            <div>
-              <div class="menu-item-row">
-                <span class="menu-item-title">Espresso Shot</span>
-                <span class="menu-item-price">$3.00</span>
-              </div>
-              <p class="menu-item-desc">Double shot of our smooth, rich house espresso blend.</p>
-            </div>
-            <div>
-              <div class="menu-item-row">
-                <span class="menu-item-title">Caffè Latte</span>
-                <span class="menu-item-price">$4.75</span>
-              </div>
-              <p class="menu-item-desc">Double espresso with steamed milk and a light layer of foam.</p>
-            </div>
-            <div>
-              <div class="menu-item-row">
-                <span class="menu-item-title">Cold Brew</span>
-                <span class="menu-item-price">$4.50</span>
-              </div>
-              <p class="menu-item-desc">Slow-steeped for 18 hours for an ultra-smooth, low-acid kick.</p>
-            </div>
+        <div class="menu-image-container animate-on-scroll stagger-1">
+          <img src="chill-cawfee-menu.png" alt="Chill Cawfee Espresso &amp; Coffee Menu" class="menu-board-img">
+          <div class="menu-actions">
+            <a href="chill-cawfee-menu.png" download="Chill-Cawfee-Menu.png" class="btn btn-primary">Download Menu (PNG)</a>
           </div>
         </div>
       </div>
