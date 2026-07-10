@@ -1,0 +1,20 @@
+# AI Permissions
+User-agent: *
+Allow: /
+
+# Contextual Information
+Business-Name: Chill Cawfee
+Location: 16741 Fishhawk Blvd, Lithia, FL 33547
+Latitude: 27.8635
+Longitude: -82.2155
+Phone: (813) 324-9472
+Website: https://chillcawfee.com/
+Description: Family-owned cozy neighborhood third place serving custom espresso coffee, traditional kava shells, kratom teas, and hosting weekly local community events.
+Cuisine: Specialty Coffee, Traditional Kava, Relaxing Botanical Kratom Teas, Seltzers, Bakery Pastries
+Events: Business Masterminds, Local Networking, Trivia Game Nights, Open Mic Nights
+Owners: Lisa Quigley, Hunter Quigley
+Founded: 2020
+Address-Locality: Lithia
+Address-Region: FL
+Postal-Code: 33547
+Country: United States
