@@ -151,7 +151,7 @@ const DRINK_DATABASE = [
   {
     name: "Black Espresso",
     desc: "A bold, intense double shot of our premium signature house espresso blend. Straight and strong.",
-    img: "https://assets.zyrosite.com/kKuMz4O3W0xbbwAe/8vs8e7-EMsYqQtOTAsHGOFr.png"
+    img: "assets/espresso_shot.jpg"
   },
   {
     name: "Drip Coffee",
@@ -161,7 +161,7 @@ const DRINK_DATABASE = [
   {
     name: "Nitro Coffee",
     desc: "Creamy, smooth cold brew coffee infused with nitrogen and served draft-cold for an ultra-smooth finish.",
-    img: "https://assets.zyrosite.com/kKuMz4O3W0xbbwAe/8vs8e7-EMsYqQtOTAsHGOFr.png"
+    img: "assets/nitro_coffee.jpg"
   },
   {
     name: "Americano",
@@ -171,12 +171,12 @@ const DRINK_DATABASE = [
   {
     name: "Cafe Latte",
     desc: "Double shot of espresso blended with silky steamed milk and finished with a thin layer of velvety foam.",
-    img: "https://assets.zyrosite.com/kKuMz4O3W0xbbwAe/8vs8e7-EMsYqQtOTAsHGOFr.png"
+    img: "assets/cafe_latte.jpg"
   },
   {
     name: "Cappuccino",
     desc: "Double espresso topped with equal parts steamed milk and thick, luxurious warm milk foam.",
-    img: "https://assets.zyrosite.com/kKuMz4O3W0xbbwAe/8vs8e7-EMsYqQtOTAsHGOFr.png"
+    img: "assets/cappuccino.jpg"
   },
   {
     name: "Italian Macchiato",
@@ -196,7 +196,7 @@ const DRINK_DATABASE = [
   {
     name: "Cubano Nitro",
     desc: "Rich espresso combined with nitrogen cold brew, sweetened condensed milk, and topped with fresh whipped cream.",
-    img: "https://assets.zyrosite.com/kKuMz4O3W0xbbwAe/8vs8e7-EMsYqQtOTAsHGOFr.png"
+    img: "assets/cubano_nitro.jpeg"
   },
   {
     name: "Honey Haze",
@@ -211,32 +211,32 @@ const DRINK_DATABASE = [
   {
     name: "Matcha",
     desc: "Premium, finely ground green tea matcha prepared with steamed milk and a touch of sweetness.",
-    img: "https://assets.zyrosite.com/kKuMz4O3W0xbbwAe/8vs8e7-EMsYqQtOTAsHGOFr.png"
+    img: "assets/matcha_latte.jpg"
   },
   {
     name: "Chai",
     desc: "Steamed black tea infused with warm, aromatic spices (cinnamon, cardamom, ginger), milk, and honey.",
-    img: "https://assets.zyrosite.com/kKuMz4O3W0xbbwAe/8vs8e7-EMsYqQtOTAsHGOFr.png"
+    img: "assets/chai_latte.jpg"
   },
   {
     name: "Double Dark Mocha",
     desc: "For the dark chocolate lover. Bold double espresso blended with rich dark cocoa and topped with chocolate-dusted whipped cream.",
-    img: "https://assets.zyrosite.com/kKuMz4O3W0xbbwAe/dark-mocha-chocolate-dream-tngiOvc1iSBiEBly.webp"
+    img: "assets/dark_chocolate_dream.jpg"
   },
   {
     name: "Caramel Dream",
     desc: "Our signature best-seller. Double espresso layered with sweet caramel, steamed milk, and a generous crown of whipped cream.",
-    img: "https://assets.zyrosite.com/kKuMz4O3W0xbbwAe/carameldream-qRxZ2Y3XVr5d1qdP.jpg"
+    img: "assets/caramel_dream.jpg"
   },
   {
     name: "White Chocolate Dream",
     desc: "Indulgent white chocolate melted slowly into hot espresso, finished with warm milk and fresh whipped cream.",
-    img: "https://assets.zyrosite.com/kKuMz4O3W0xbbwAe/whitechocolatedream-1-AmNLtSajddpM2S3U.jpg"
+    img: "assets/white_chocolate_dream.jpg"
   },
   {
     name: "Tuxedo Dream Cubano",
     desc: "The ultimate dessert treat. Iced coffee featuring a decadent swirl of white and dark chocolate drizzles, marshmallow, milk, and whipped cream.",
-    img: "https://assets.zyrosite.com/kKuMz4O3W0xbbwAe/8vs8e7-EMsYqQtOTAsHGOFr.png"
+    img: "assets/toasted_tuxedo_dream.jpeg"
   }
 ];
 
