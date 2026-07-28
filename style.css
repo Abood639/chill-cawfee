@@ -955,6 +955,10 @@ p {
     display: none;
   }
   
+  .calendar-iframe {
+    height: 450px !important;
+  }
+  
   .nav-menu {
     gap: 16px;
   }
