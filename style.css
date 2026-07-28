@@ -656,6 +656,11 @@ p {
   background-color: var(--bg-secondary);
 }
 
+#menu-tabs-section,
+#menu-tabs-section.section-alt {
+  background-color: transparent !important;
+}
+
 .section-dark {
   background-color: var(--bg-dark);
   color: var(--color-text-light);
