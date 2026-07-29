@@ -38,7 +38,77 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // 5. Interactive Event Tabs
   initEventTabs();
+
+  // 6. Mobile Navigation Drawer Toggle
+  initMobileMenu();
 });
+
+// Mobile Navigation Toggle & Drawer Handler
+function initMobileMenu() {
+  const toggleBtn = document.querySelector('.nav-toggle');
+  const navMenu = document.querySelector('.nav-menu');
+
+  if (!toggleBtn || !navMenu) return;
+
+  // Create backdrop element dynamically if absent
+  let backdrop = document.querySelector('.nav-backdrop');
+  if (!backdrop) {
+    backdrop = document.createElement('div');
+    backdrop.className = 'nav-backdrop';
+    document.body.appendChild(backdrop);
+  }
+
+  const closeMenu = () => {
+    toggleBtn.classList.remove('active');
+    navMenu.classList.remove('active');
+    backdrop.classList.remove('active');
+    document.body.classList.remove('nav-open');
+    toggleBtn.setAttribute('aria-expanded', 'false');
+  };
+
+  const openMenu = () => {
+    toggleBtn.classList.add('active');
+    navMenu.classList.add('active');
+    backdrop.classList.add('active');
+    document.body.classList.add('nav-open');
+    toggleBtn.setAttribute('aria-expanded', 'true');
+  };
+
+  toggleBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    const isOpen = navMenu.classList.contains('active');
+    if (isOpen) {
+      closeMenu();
+    } else {
+      openMenu();
+    }
+  });
+
+  // Close on backdrop click
+  backdrop.addEventListener('click', closeMenu);
+
+  // Close on nav link click
+  const navLinks = navMenu.querySelectorAll('a');
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      closeMenu();
+    });
+  });
+
+  // Close on Escape key press
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && navMenu.classList.contains('active')) {
+      closeMenu();
+    }
+  });
+
+  // Close if window resizes to desktop width
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 768 && navMenu.classList.contains('active')) {
+      closeMenu();
+    }
+  });
+}
 
 // Canvas Particle System: Coffee Aroma
 function initAromaCanvas() {
