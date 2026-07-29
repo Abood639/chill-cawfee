@@ -156,7 +156,7 @@ const DRINK_DATABASE = [
   {
     name: "Drip Coffee",
     desc: "Our premium signature house blend, locally roasted and brewed fresh all day long. Classic and unpretentious.",
-    img: "https://assets.zyrosite.com/kKuMz4O3W0xbbwAe/8vs8e7-EMsYqQtOTAsHGOFr.png"
+    img: "drip-coffee-horizontal.jpg"
   },
   {
     name: "Nitro Coffee",
@@ -166,7 +166,7 @@ const DRINK_DATABASE = [
   {
     name: "Americano",
     desc: "A bold double shot of our premium house espresso blend lengthened with hot water. Clean and robust.",
-    img: "https://assets.zyrosite.com/kKuMz4O3W0xbbwAe/8vs8e7-EMsYqQtOTAsHGOFr.png"
+    img: "americano-slider.jpg"
   },
   {
     name: "Cafe Latte",
@@ -181,17 +181,17 @@ const DRINK_DATABASE = [
   {
     name: "Italian Macchiato",
     desc: "A bold, concentrated double shot of espresso marked with a single dollop of warm milk foam.",
-    img: "https://assets.zyrosite.com/kKuMz4O3W0xbbwAe/8vs8e7-EMsYqQtOTAsHGOFr.png"
+    img: "italian-macchiato-horizontal.jpg"
   },
   {
     name: "Cafe Mocha",
     desc: "Espresso combined with dark cocoa syrup, steamed milk, and a light dusting of chocolate powder.",
-    img: "https://assets.zyrosite.com/kKuMz4O3W0xbbwAe/8vs8e7-EMsYqQtOTAsHGOFr.png"
+    img: "cafe-mocha-slider.jpg"
   },
   {
     name: "Cafe Con leche",
     desc: "Traditional, strongly brewed espresso mixed with sweetened steamed milk for a smooth, balanced kick.",
-    img: "https://assets.zyrosite.com/kKuMz4O3W0xbbwAe/8vs8e7-EMsYqQtOTAsHGOFr.png"
+    img: "cafe-con-leche-slider.jpg"
   },
   {
     name: "Cubano Nitro",
@@ -201,12 +201,12 @@ const DRINK_DATABASE = [
   {
     name: "Honey Haze",
     desc: "A comforting blend of double espresso, vanilla, natural sweet honey, and creamy oat milk.",
-    img: "https://assets.zyrosite.com/kKuMz4O3W0xbbwAe/8vs8e7-EMsYqQtOTAsHGOFr.png"
+    img: "honey-haze-latte-horizontal.jpg"
   },
   {
     name: "Cinnamon Toast Latte",
     desc: "Espresso with brown sugar, sweet vanilla, warm cinnamon, and textured whole milk. Tastes like childhood comfort.",
-    img: "https://assets.zyrosite.com/kKuMz4O3W0xbbwAe/8vs8e7-EMsYqQtOTAsHGOFr.png"
+    img: "cinnamon-toast-latte-slider.jpg"
   },
   {
     name: "Matcha",
