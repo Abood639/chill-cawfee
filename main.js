@@ -304,7 +304,7 @@ const DRINK_DATABASE = [
     img: "assets/white_chocolate_dream.jpg"
   },
   {
-    name: "Tuxedo Dream Cubano",
+    name: "Toasted Tuxedo",
     desc: "The ultimate dessert treat. Iced coffee featuring a decadent swirl of white and dark chocolate drizzles, marshmallow, milk, and whipped cream.",
     img: "assets/toasted_tuxedo_dream.jpeg"
   }

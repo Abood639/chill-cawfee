@@ -1,0 +1,94 @@
+- generic [active] [ref=f7e1]:
+  - banner [ref=f7e2]:
+    - generic [ref=f7e3]:
+      - link "Chill Cawfee Logo Chill Cawfee" [ref=f7e4] [cursor=pointer]:
+        - /url: index.html
+        - img "Chill Cawfee Logo" [ref=f7e5]
+        - generic [ref=f7e6]: Chill Cawfee
+      - button "Toggle Navigation Menu" [ref=f7e7] [cursor=pointer]
+      - navigation
+  - generic [ref=f7e13]:
+    - generic [ref=f7e14]: Pacific Island Tradition
+    - heading [level=1] [ref=f7e15]:
+      - text: What is
+      - emphasis [ref=f7e16]: Kava
+      - text: "?"
+    - paragraph [ref=f7e17]: An introduction to the history, ceremonial traditions, and calming properties of this South Pacific botanical root.
+  - generic [ref=f7e19]:
+    - generic [ref=f7e20]:
+      - heading "Origins & Pacific Island Culture" [level=2] [ref=f7e21]
+      - paragraph [ref=f7e22]:
+        - text: Kava (
+        - emphasis [ref=f7e23]: Piper methysticum
+        - text: ) is a tropical shrub native to the Pacific Island regions of Polynesia, Melanesia, and Micronesia. Domestication of kava is believed to have begun in northern Vanuatu over 3,000 years ago, eventually spreading to Fiji, Tonga, Samoa, Hawaii, and beyond.
+      - paragraph [ref=f7e24]:
+        - text: For millennia, kava root has occupied a sacred place in island societies. Shared from a communal bowl, it is consumed during royal welcoming rituals (known as
+        - emphasis [ref=f7e25]: sevusevu
+        - text: ), tribal councils, weddings, community events, and social gatherings to foster peaceful dialogue, respect, and deep mutual connections.
+    - generic [ref=f7e26]:
+      - heading "How It Works & Its Benefits" [level=2] [ref=f7e27]
+      - paragraph [ref=f7e28]: "The calming effects of kava come from active organic compounds located in the root system called **kavalactones**. When consumed, these compounds gently interact with pathways in the brain to encourage wellness:"
+      - generic [ref=f7e29]:
+        - generic [ref=f7e30]:
+          - heading "Calms Stress & Anxiety" [level=3] [ref=f7e31]
+          - paragraph [ref=f7e32]: Kava promotes mental clarity and physical relaxation. It helps dissolve everyday stress and social anxiety, allowing you to relax without clouding your focus or causing a heavy head.
+        - generic [ref=f7e33]:
+          - heading "Supports Restful Sleep" [level=3] [ref=f7e34]
+          - paragraph [ref=f7e35]: As a natural muscle relaxant, a double shell of kava in the evening helps prepare the body for restorative sleep, making it an excellent alternative to alcohol.
+    - generic [ref=f7e36]:
+      - heading "Traditional Preparation" [level=2] [ref=f7e37]
+      - paragraph [ref=f7e38]: Traditionally, the woody root of the kava plant is harvested, dried, and ground or pounded into a fine powder. This powder is placed inside a mesh strainer bag, submerged in cool water, and kneaded and squeezed by hand for several minutes to extract the kavalactones.
+      - paragraph [ref=f7e39]:
+        - text: The resulting beverage has a muddy appearance, an earthy, peppery taste, and is served chilled in a half-coconut shell (known as a
+        - strong [ref=f7e40]: tanoa
+        - text: or **bilo**). Since kava has mild anesthetic properties, you will experience a characteristic, harmless
+        - emphasis [ref=f7e41]: numbing sensation
+        - text: on your tongue and lips after your first few sips!
+      - paragraph [ref=f7e42]: At Chill Cawfee, we serve traditional kava in authentic shells, alongside our modern sweetened kava brews and botanical fruit teas.
+    - generic [ref=f7e43]:
+      - heading "Important Considerations" [level=2] [ref=f7e44]
+      - paragraph [ref=f7e45]: "To ensure a safe and relaxing experience, please keep these considerations in mind:"
+      - paragraph [ref=f7e46]: Traditional kava should be enjoyed in moderation. Kava should never be mixed with alcohol or certain medications (such as sedatives or anti-anxiety prescriptions) as they can cause extreme drowsiness. Historically, rare instances of liver toxicity were associated with concentrated, poor-quality extracts using stems or leaves; premium root-only infusions are widely considered safe for healthy adults.
+      - paragraph [ref=f7e47]: "Disclaimer: Speak with your physician before trying kava, especially if you have pre-existing liver issues or are currently on prescription medications."
+  - contentinfo [ref=f7e48]:
+    - generic [ref=f7e49]:
+      - generic [ref=f7e50]:
+        - heading "Chill Cawfee" [level=3] [ref=f7e51]
+        - paragraph [ref=f7e52]: Fishhawk's neighborhood living room. Relocated to Lithia, Est. 2020. Rebuilding the physical third place.
+        - paragraph [ref=f7e53]: Poured by Hunter. Welcomed by Lisa.
+      - generic [ref=f7e54]:
+        - heading "Navigation" [level=4] [ref=f7e55]
+        - list [ref=f7e56]:
+          - listitem [ref=f7e57]:
+            - link "Home" [ref=f7e58] [cursor=pointer]:
+              - /url: index.html
+          - listitem [ref=f7e59]:
+            - link "Our Menu" [ref=f7e60] [cursor=pointer]:
+              - /url: menu.html
+          - listitem [ref=f7e61]:
+            - link "What is Kava?" [ref=f7e62] [cursor=pointer]:
+              - /url: kava.html
+          - listitem [ref=f7e63]:
+            - link "What is Kratom?" [ref=f7e64] [cursor=pointer]:
+              - /url: kratom.html
+          - listitem [ref=f7e65]:
+            - link "Our Story" [ref=f7e66] [cursor=pointer]:
+              - /url: about.html
+          - listitem [ref=f7e67]:
+            - link "Community & Events" [ref=f7e68] [cursor=pointer]:
+              - /url: community.html
+      - generic [ref=f7e69]:
+        - heading "Find the Shop" [level=4] [ref=f7e70]
+        - generic [ref=f7e71]:
+          - paragraph [ref=f7e72]: 16741 Fishhawk Blvd, Lithia, FL 33547
+          - paragraph [ref=f7e73]: lisa@chillcawfee.com
+          - paragraph [ref=f7e74]:
+            - link "Get Directions →" [ref=f7e75] [cursor=pointer]:
+              - /url: https://maps.app.goo.gl/ACGVDDwkX2eh1vUDA
+    - generic [ref=f7e76]:
+      - paragraph [ref=f7e77]: © 2026 Chill Cawfee. All rights reserved.
+      - generic [ref=f7e78]:
+        - link "FB" [ref=f7e79] [cursor=pointer]:
+          - /url: "#"
+        - link "IG" [ref=f7e80] [cursor=pointer]:
+          - /url: "#"

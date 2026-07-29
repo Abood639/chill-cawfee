@@ -1,0 +1,92 @@
+- generic [active] [ref=f8e1]:
+  - banner [ref=f8e2]:
+    - generic [ref=f8e3]:
+      - link "Chill Cawfee Logo Chill Cawfee" [ref=f8e4] [cursor=pointer]:
+        - /url: index.html
+        - img "Chill Cawfee Logo" [ref=f8e5]
+        - generic [ref=f8e6]: Chill Cawfee
+      - button "Toggle Navigation Menu" [ref=f8e7] [cursor=pointer]
+      - navigation
+  - generic [ref=f8e13]:
+    - generic [ref=f8e14]: Natural Botanical Tea
+    - heading [level=1] [ref=f8e15]:
+      - text: What is
+      - emphasis [ref=f8e16]: Kratom
+      - text: "?"
+    - paragraph [ref=f8e17]: An introduction to the history, traditional uses, and unique properties of this South Asian botanical leaf.
+  - generic [ref=f8e19]:
+    - generic [ref=f8e20]:
+      - heading "Origins & History" [level=2] [ref=f8e21]
+      - paragraph [ref=f8e22]:
+        - text: Kratom (
+        - emphasis [ref=f8e23]: Mitragyna speciosa
+        - text: ) is a tropical evergreen tree native to Southeast Asia, particularly in Thailand, Indonesia, Malaysia, Myanmar, and Papua New Guinea. Interestingly, it belongs to the
+        - strong [ref=f8e24]: Rubiaceae family
+        - text: —making it a close botanical relative of the coffee plant.
+      - paragraph [ref=f8e25]: For hundreds of years, indigenous communities in Southeast Asia have utilized kratom leaves as a traditional herbal remedy. Field laborers and farmers routinely chewed the fresh leaves to relieve physical fatigue, boost stamina, and tolerate the intense tropical heat during long workdays.
+    - generic [ref=f8e26]:
+      - heading "How It Works & Its Benefits" [level=2] [ref=f8e27]
+      - paragraph [ref=f8e28]:
+        - text: Kratom leaves contain active compounds called alkaloids (principally
+        - emphasis [ref=f8e29]: mitragynine
+        - text: and
+        - emphasis [ref=f8e30]: 7-hydroxymitragynine
+        - text: "). These compounds interact with receptors in the brain to produce dose-dependent effects, creating a unique spectrum of benefits:"
+      - generic [ref=f8e31]:
+        - generic [ref=f8e32]:
+          - heading "Energy & Focus (Low Portions)" [level=3] [ref=f8e33]
+          - paragraph [ref=f8e34]: In smaller amounts, kratom acts as a mild stimulant. Users report feeling more alert, energetic, talkative, and focused—similar to a clean cup of coffee without the jitters.
+        - generic [ref=f8e35]:
+          - heading "Calm & Comfort (Moderate Portions)" [level=3] [ref=f8e36]
+          - paragraph [ref=f8e37]: In slightly larger portions, the botanical shifts into a relaxing agent. It helps calm the mind, relieve muscle soreness, ease physical tension, and promote deep relaxation.
+    - generic [ref=f8e38]:
+      - heading "Traditional Preparation" [level=2] [ref=f8e39]
+      - paragraph [ref=f8e40]: Historically, the leaves were plucked directly from the tree and chewed fresh, or dried and crushed to brew a warm, soothing tea. Honey, sugar, or citrus were often added to balance out the botanical's strong, bitter, earthy flavor.
+      - paragraph [ref=f8e41]: Today, kratom is typically dried, milled into a fine green powder, and brewed as a refreshing chilled tea. At Chill Cawfee, we serve clean, premium-grade leaf infusions on draft, which are blended into delicious seltzer mocktails, elixirs, and fruit tea fusions.
+    - generic [ref=f8e42]:
+      - heading "Safety & Responsible Use" [level=2] [ref=f8e43]
+      - paragraph [ref=f8e44]: "Because kratom interacts with receptors in the brain, it is important to practice mindfulness and consume responsibly:"
+      - paragraph [ref=f8e45]: Start with small portions to gauge your body's sensitivity. Higher doses can sometimes lead to nausea, dizziness, or grogginess. Long-term daily use of large amounts may lead to habit formation or mild withdrawal symptoms upon stopping.
+      - paragraph [ref=f8e46]: "Note: If you have existing medical conditions, are taking prescription medications, or are pregnant, we strongly encourage you to consult with a healthcare professional before trying kratom."
+  - contentinfo [ref=f8e47]:
+    - generic [ref=f8e48]:
+      - generic [ref=f8e49]:
+        - heading "Chill Cawfee" [level=3] [ref=f8e50]
+        - paragraph [ref=f8e51]: Fishhawk's neighborhood living room. Relocated to Lithia, Est. 2020. Rebuilding the physical third place.
+        - paragraph [ref=f8e52]: Poured by Hunter. Welcomed by Lisa.
+      - generic [ref=f8e53]:
+        - heading "Navigation" [level=4] [ref=f8e54]
+        - list [ref=f8e55]:
+          - listitem [ref=f8e56]:
+            - link "Home" [ref=f8e57] [cursor=pointer]:
+              - /url: index.html
+          - listitem [ref=f8e58]:
+            - link "Our Menu" [ref=f8e59] [cursor=pointer]:
+              - /url: menu.html
+          - listitem [ref=f8e60]:
+            - link "What is Kava?" [ref=f8e61] [cursor=pointer]:
+              - /url: kava.html
+          - listitem [ref=f8e62]:
+            - link "What is Kratom?" [ref=f8e63] [cursor=pointer]:
+              - /url: kratom.html
+          - listitem [ref=f8e64]:
+            - link "Our Story" [ref=f8e65] [cursor=pointer]:
+              - /url: about.html
+          - listitem [ref=f8e66]:
+            - link "Community & Events" [ref=f8e67] [cursor=pointer]:
+              - /url: community.html
+      - generic [ref=f8e68]:
+        - heading "Find the Shop" [level=4] [ref=f8e69]
+        - generic [ref=f8e70]:
+          - paragraph [ref=f8e71]: 16741 Fishhawk Blvd, Lithia, FL 33547
+          - paragraph [ref=f8e72]: lisa@chillcawfee.com
+          - paragraph [ref=f8e73]:
+            - link "Get Directions →" [ref=f8e74] [cursor=pointer]:
+              - /url: https://maps.app.goo.gl/ACGVDDwkX2eh1vUDA
+    - generic [ref=f8e75]:
+      - paragraph [ref=f8e76]: © 2026 Chill Cawfee. All rights reserved.
+      - generic [ref=f8e77]:
+        - link "FB" [ref=f8e78] [cursor=pointer]:
+          - /url: "#"
+        - link "IG" [ref=f8e79] [cursor=pointer]:
+          - /url: "#"

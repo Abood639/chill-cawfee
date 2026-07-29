@@ -1,0 +1,354 @@
+- generic [active] [ref=f3e1]:
+  - banner [ref=f3e2]:
+    - generic [ref=f3e3]:
+      - link "Chill Cawfee Logo Chill Cawfee" [ref=f3e4] [cursor=pointer]:
+        - /url: index.html
+        - img "Chill Cawfee Logo" [ref=f3e5]
+        - generic [ref=f3e6]: Chill Cawfee
+      - navigation [ref=f3e7]:
+        - list [ref=f3e8]:
+          - listitem [ref=f3e9]:
+            - link "Home" [ref=f3e10] [cursor=pointer]:
+              - /url: index.html
+          - listitem [ref=f3e11]:
+            - link "Our Menu" [ref=f3e12] [cursor=pointer]:
+              - /url: menu.html
+          - listitem [ref=f3e13]:
+            - link "What is Kava?" [ref=f3e14] [cursor=pointer]:
+              - /url: kava.html
+          - listitem [ref=f3e15]:
+            - link "What is Kratom?" [ref=f3e16] [cursor=pointer]:
+              - /url: kratom.html
+          - listitem [ref=f3e17]:
+            - link "Our Story" [ref=f3e18] [cursor=pointer]:
+              - /url: about.html
+          - listitem [ref=f3e19]:
+            - link "Community & Events" [ref=f3e20] [cursor=pointer]:
+              - /url: community.html
+      - link "View Menu" [ref=f3e22] [cursor=pointer]:
+        - /url: menu.html
+  - generic [ref=f3e24]:
+    - generic [ref=f3e25]:
+      - generic [ref=f3e26]: Welcome to Fishhawk
+      - heading [level=1] [ref=f3e27]:
+        - text: Fishhawk's Neighborhood
+        - emphasis [ref=f3e28]: Living Room
+      - paragraph [ref=f3e29]: We built Chill Cawfee because real handshakes beat virtual calls. Pull up a cozy chair, grab an unapologetically sweet drink, and connect with your neighbors.
+      - generic [ref=f3e30]:
+        - link "View Our Menu" [ref=f3e31] [cursor=pointer]:
+          - /url: menu.html
+        - link "Event Calendar" [ref=f3e32] [cursor=pointer]:
+          - /url: community.html
+    - img "Chill Cawfee & Quigs Kava Lounge Storefront - Now Open" [ref=f3e34]
+  - generic [ref=f3e37]:
+    - generic [ref=f3e38]:
+      - generic [ref=f3e39]: What's Happening
+      - heading "Chill Cawfee Event Calendar" [level=2] [ref=f3e40]
+      - paragraph [ref=f3e41]: Join us for trivia nights, live music, community gatherings, and relaxation sessions. Check out our upcoming schedule below!
+    - iframe [ref=f3e44]:
+      - generic [ref=f4e3]:
+        - progressbar "Loading calendar" [ref=f4e5]
+        - banner [ref=f4e11]:
+          - generic [ref=f4e12]:
+            - navigation "Date navigation" [ref=f4e14]:
+              - generic [ref=f4e15]:
+                - generic [ref=f4e16]:
+                  - button "Today, Wednesday, July 29" [ref=f4e18] [cursor=pointer]:
+                    - generic [ref=f4e20]: Today
+                  - tooltip [ref=f4e21]: Wednesday, July 29
+                - generic [ref=f4e22]:
+                  - button "Previous month" [ref=f4e23] [cursor=pointer]
+                  - tooltip [ref=f4e29]: Previous month
+                - generic [ref=f4e30]:
+                  - button "Next month" [ref=f4e31] [cursor=pointer]
+                  - tooltip [ref=f4e37]: Next month
+              - button "July 2026" [ref=f4e42]:
+                - generic [ref=f4e43]:
+                  - generic [ref=f4e44]: July 2026
+                  - generic [ref=f4e45]: July 2026
+            - generic [ref=f4e50]:
+              - generic [ref=f4e51]:
+                - button "Send feedback to Google" [ref=f4e52] [cursor=pointer]
+                - tooltip [ref=f4e59]: Send feedback to Google
+              - generic [ref=f4e62]:
+                - button "Select calendar" [ref=f4e63] [cursor=pointer]
+                - tooltip [ref=f4e69]: Select calendar
+              - generic [ref=f4e70]:
+                - button "Print my calendar (shows preview in new window)" [ref=f4e71] [cursor=pointer]
+                - tooltip [ref=f4e77]: Print my calendar (shows preview in new window)
+              - navigation "View navigation" [ref=f4e78]:
+                - button "Month" [ref=f4e82] [cursor=pointer]
+        - main [ref=f4e89]:
+          - generic "July 2026" [ref=f4e91]:
+            - grid [ref=f4e92]:
+              - row [ref=f4e93]:
+                - columnheader "Sunday" [ref=f4e94]:
+                  - generic [ref=f4e96]: Sun
+                - columnheader "Monday" [ref=f4e97]:
+                  - generic [ref=f4e99]: Mon
+                - columnheader "Tuesday" [ref=f4e100]:
+                  - generic [ref=f4e102]: Tue
+                - columnheader "Wednesday" [ref=f4e103]:
+                  - generic [ref=f4e105]: Wed
+                - columnheader "Thursday" [ref=f4e106]:
+                  - generic [ref=f4e108]: Thu
+                - columnheader "Friday" [ref=f4e109]:
+                  - generic [ref=f4e111]: Fri
+                - columnheader "Saturday" [ref=f4e112]:
+                  - generic [ref=f4e114]: Sat
+              - row [ref=f4e115]:
+                - generic:
+                  - heading [level=2] [ref=f4e124]: "28"
+                  - heading [level=2] [ref=f4e125]: "29"
+                  - heading [level=2] [ref=f4e126]: "30"
+                  - heading [level=2] [ref=f4e127]: Jul 1
+                  - heading [level=2] [ref=f4e128]: "2"
+                  - heading [level=2] [ref=f4e129]: "3"
+                  - heading [level=2] [ref=f4e130]: "4"
+                - generic [ref=f4e131]:
+                  - gridcell "No events, Sunday, June 28":
+                    - heading "No events, Sunday, June 28" [level=2] [ref=f4e132]
+                  - gridcell "No events, Monday, June 29":
+                    - heading "No events, Monday, June 29" [level=2] [ref=f4e133]
+                  - gridcell "No events, Tuesday, June 30":
+                    - heading "No events, Tuesday, June 30" [level=2] [ref=f4e134]
+                  - gridcell "No events, Wednesday, July 1":
+                    - heading "No events, Wednesday, July 1" [level=2] [ref=f4e135]
+                  - gridcell "No events, Thursday, July 2":
+                    - heading "No events, Thursday, July 2" [level=2] [ref=f4e136]
+                  - gridcell "No events, Friday, July 3":
+                    - heading "No events, Friday, July 3" [level=2] [ref=f4e137]
+                  - gridcell "No events, Saturday, July 4":
+                    - heading "No events, Saturday, July 4" [level=2] [ref=f4e138]
+              - row [ref=f4e139]:
+                - generic:
+                  - heading [level=2] [ref=f4e148]: "5"
+                  - heading [level=2] [ref=f4e149]: "6"
+                  - heading [level=2] [ref=f4e150]: "7"
+                  - heading [level=2] [ref=f4e151]: "8"
+                  - heading [level=2] [ref=f4e152]: "9"
+                  - heading [level=2] [ref=f4e153]: "10"
+                  - heading [level=2] [ref=f4e154]: "11"
+                - generic [ref=f4e155]:
+                  - gridcell "No events, Sunday, July 5":
+                    - heading "No events, Sunday, July 5" [level=2] [ref=f4e156]
+                  - gridcell "No events, Monday, July 6":
+                    - heading "No events, Monday, July 6" [level=2] [ref=f4e157]
+                  - gridcell "No events, Tuesday, July 7":
+                    - heading "No events, Tuesday, July 7" [level=2] [ref=f4e158]
+                  - gridcell "No events, Wednesday, July 8":
+                    - heading "No events, Wednesday, July 8" [level=2] [ref=f4e159]
+                  - gridcell "No events, Thursday, July 9":
+                    - heading "No events, Thursday, July 9" [level=2] [ref=f4e160]
+                  - gridcell "No events, Friday, July 10":
+                    - heading "No events, Friday, July 10" [level=2] [ref=f4e161]
+                  - gridcell "No events, Saturday, July 11":
+                    - heading "No events, Saturday, July 11" [level=2] [ref=f4e162]
+              - row [ref=f4e163]:
+                - generic:
+                  - heading [level=2] [ref=f4e172]: "12"
+                  - heading [level=2] [ref=f4e173]: "13"
+                  - heading [level=2] [ref=f4e174]: "14"
+                  - heading [level=2] [ref=f4e175]: "15"
+                  - heading [level=2] [ref=f4e176]: "16"
+                  - heading [level=2] [ref=f4e177]: "17"
+                  - heading [level=2] [ref=f4e178]: "18"
+                - generic [ref=f4e179]:
+                  - gridcell "No events, Sunday, July 12":
+                    - heading "No events, Sunday, July 12" [level=2] [ref=f4e180]
+                  - gridcell "No events, Monday, July 13":
+                    - heading "No events, Monday, July 13" [level=2] [ref=f4e181]
+                  - gridcell "No events, Tuesday, July 14":
+                    - heading "No events, Tuesday, July 14" [level=2] [ref=f4e182]
+                  - gridcell "No events, Wednesday, July 15":
+                    - heading "No events, Wednesday, July 15" [level=2] [ref=f4e183]
+                  - gridcell "No events, Thursday, July 16":
+                    - heading "No events, Thursday, July 16" [level=2] [ref=f4e184]
+                  - gridcell "No events, Friday, July 17":
+                    - heading "No events, Friday, July 17" [level=2] [ref=f4e185]
+                  - gridcell "No events, Saturday, July 18":
+                    - heading "No events, Saturday, July 18" [level=2] [ref=f4e186]
+              - row [ref=f4e187]:
+                - generic:
+                  - heading [level=2] [ref=f4e196]: "19"
+                  - heading [level=2] [ref=f4e197]: "20"
+                  - heading [level=2] [ref=f4e198]: "21"
+                  - heading [level=2] [ref=f4e199]: "22"
+                  - heading [level=2] [ref=f4e200]: "23"
+                  - heading [level=2] [ref=f4e201]: "24"
+                  - heading [level=2] [ref=f4e202]: "25"
+                - generic [ref=f4e203]:
+                  - gridcell "No events, Sunday, July 19":
+                    - heading "No events, Sunday, July 19" [level=2] [ref=f4e204]
+                  - gridcell "No events, Monday, July 20":
+                    - heading "No events, Monday, July 20" [level=2] [ref=f4e205]
+                  - gridcell "No events, Tuesday, July 21":
+                    - heading "No events, Tuesday, July 21" [level=2] [ref=f4e206]
+                  - gridcell "No events, Wednesday, July 22":
+                    - heading "No events, Wednesday, July 22" [level=2] [ref=f4e207]
+                  - gridcell "No events, Thursday, July 23":
+                    - heading "No events, Thursday, July 23" [level=2] [ref=f4e208]
+                  - gridcell "No events, Friday, July 24":
+                    - heading "No events, Friday, July 24" [level=2] [ref=f4e209]
+                  - gridcell "No events, Saturday, July 25":
+                    - heading "No events, Saturday, July 25" [level=2] [ref=f4e210]
+              - row [ref=f4e211]:
+                - generic:
+                  - heading [level=2] [ref=f4e220]: "26"
+                  - heading [level=2] [ref=f4e221]: "27"
+                  - heading [level=2] [ref=f4e222]: "28"
+                  - heading [level=2] [ref=f4e223]: "29"
+                  - heading [level=2] [ref=f4e224]: "30"
+                  - heading [level=2] [ref=f4e225]: "31"
+                  - heading [level=2] [ref=f4e226]: Aug 1
+                - generic [ref=f4e227]:
+                  - gridcell "No events, Sunday, July 26":
+                    - heading "No events, Sunday, July 26" [level=2] [ref=f4e228]
+                  - gridcell "No events, Monday, July 27":
+                    - heading "No events, Monday, July 27" [level=2] [ref=f4e229]
+                  - gridcell "No events, Tuesday, July 28":
+                    - heading "No events, Tuesday, July 28" [level=2] [ref=f4e230]
+                  - gridcell "No events, Wednesday, July 29, today":
+                    - heading "No events, Wednesday, July 29, today" [level=2] [ref=f4e231]
+                  - gridcell "No events, Thursday, July 30":
+                    - heading "No events, Thursday, July 30" [level=2] [ref=f4e232]
+                  - gridcell "No events, Friday, July 31":
+                    - heading "No events, Friday, July 31" [level=2] [ref=f4e233]
+                  - gridcell "No events, Saturday, August 1":
+                    - heading "No events, Saturday, August 1" [level=2] [ref=f4e234]
+        - contentinfo [ref=f4e235]:
+          - generic [ref=f4e236]:
+            - generic [ref=f4e237]: quigskavalounge@gmail.com
+            - generic [ref=f4e238]: "Events shown in time zone: (GMT-04:00) Eastern Time - New York"
+            - button "Add to Google Calendar (opens a new tab)" [ref=f4e239] [cursor=pointer]:
+              - generic [ref=f4e240]: Add to Google Calendar
+          - generic [ref=f4e241]: Calendar
+  - generic [ref=f3e47]:
+    - img "Family Connection at Chill Cawfee" [ref=f3e50]
+    - generic [ref=f3e52]:
+      - generic [ref=f3e53]: Family Owned & Operated
+      - heading "Built for Real Connections" [level=2] [ref=f3e54]
+      - paragraph [ref=f3e55]: "Founded in 2020 by Lisa and Tom Quigley, Chill Cawfee was created with a simple vision: to bring people together over great coffee, meaningful conversations, and a sense of community. As longtime FishHawk residents since 2001, we've always been passionate about serving the place we call home."
+      - paragraph [ref=f3e56]: Today, Lisa proudly operates Chill Cawfee alongside Hunter Quigley, Tom's son and her stepson, continuing the family tradition of creating a welcoming space where neighbors become friends.
+      - link "Our Story" [ref=f3e57] [cursor=pointer]:
+        - /url: about.html
+  - generic [ref=f3e59]:
+    - generic [ref=f3e60]:
+      - generic [ref=f3e61]: Unapologetically Sweet
+      - heading "Comfort in Every Cup" [level=2] [ref=f3e62]
+      - paragraph [ref=f3e63]: Coffee should be comforting, rich, and completely unpretentious. Hunter pours each of our signature custom creations daily with real whipped cream and decadent drizzles.
+    - generic [ref=f3e64]:
+      - generic [ref=f3e65]:
+        - generic [ref=f3e66]:
+          - img "Caramel Dream coffee" [ref=f3e67]
+          - generic [ref=f3e68]: Sweet & Smooth
+        - generic [ref=f3e69]:
+          - generic [ref=f3e70]: Signature Coffee
+          - heading "Caramel Dream" [level=3] [ref=f3e71]
+          - paragraph [ref=f3e72]: A rich, velvety espresso blend layered with thick caramel sauce, steamed milk, and topped with fresh whipped cream.
+      - generic [ref=f3e73]:
+        - generic [ref=f3e74]:
+          - img "White Chocolate Dream coffee" [ref=f3e75]
+          - generic [ref=f3e76]: Classic Vibe
+        - generic [ref=f3e77]:
+          - generic [ref=f3e78]: Signature Classic
+          - heading "White Chocolate Dream" [level=3] [ref=f3e79]
+          - paragraph [ref=f3e80]: Creamy white chocolate melted into freshly pulled espresso, finished with a delicate dusting of cocoa.
+      - generic [ref=f3e81]:
+        - generic [ref=f3e82]:
+          - img "Double Dark Mocha coffee" [ref=f3e83]
+          - generic [ref=f3e84]: Dark & Bold
+        - generic [ref=f3e85]:
+          - generic [ref=f3e86]: Chocolate Heaven
+          - heading "Double Dark Mocha" [level=3] [ref=f3e87]
+          - paragraph [ref=f3e88]: For the true chocolate lover, featuring two shots of espresso drowned in rich, dark cocoa and steamed milk.
+    - generic [ref=f3e89]:
+      - generic [ref=f3e90]:
+        - generic [ref=f3e91]: Interactive drink finder
+        - heading "Match Your Coffee Taste" [level=3] [ref=f3e92]
+        - paragraph [ref=f3e93]: Drag the sliders below to reveal your ideal Chill Cawfee drink recommendation.
+      - generic [ref=f3e94]:
+        - generic [ref=f3e95]:
+          - generic [ref=f3e96]: Bold in Black
+          - generic [ref=f3e97]: Dessert Sweet
+        - slider [ref=f3e98]: "9"
+      - generic [ref=f3e100]:
+        - img "Cafe Con leche" [ref=f3e101]
+        - generic [ref=f3e102]:
+          - text: Your Perfect Cup
+          - heading "Cafe Con leche" [level=4] [ref=f3e103]
+          - paragraph [ref=f3e104]: Traditional, strongly brewed espresso mixed with sweetened steamed milk for a smooth, balanced kick.
+          - link "Order Now" [ref=f3e106] [cursor=pointer]:
+            - /url: menu.html
+  - generic [ref=f3e109]:
+    - generic [ref=f3e110]:
+      - generic [ref=f3e111]: Also Available
+      - heading "Kava & Mocktail Teas" [level=2] [ref=f3e112]
+      - paragraph [ref=f3e113]: Looking for an alternative way to relax? We proudly serve premium kava and herbal mocktail teas to help you unwind without alcohol or caffeine.
+      - paragraph [ref=f3e114]: “You didn't come this far to stop.”
+      - generic [ref=f3e115]:
+        - link "Quigs Kava Menu" [ref=f3e116] [cursor=pointer]:
+          - /url: https://quigskavalounge.com/#menu
+        - link "Order Delivery" [ref=f3e117] [cursor=pointer]:
+          - /url: https://www.ubereats.com/store/quigs-kava-lounge/8v0jd14UXYOxqRMc4G4RRA
+    - img "Chill Cawfee & Quigs Kava Lounge Bar Setup" [ref=f3e120]
+  - generic [ref=f3e123]:
+    - generic [ref=f3e124]:
+      - generic [ref=f3e125]: Weekly Calendar
+      - heading "Where Fishhawk Gathers" [level=2] [ref=f3e126]
+      - paragraph [ref=f3e127]: From entrepreneurial masterminds and book clubs to lively game nights and spoken word poetry, we host events that bring our neighborhood closer together.
+    - generic [ref=f3e128]:
+      - generic [ref=f3e129]:
+        - heading "Community Meetups" [level=3] [ref=f3e130]
+        - paragraph [ref=f3e131]: Join our local networking groups, book clubs, and mastermind sessions designed to foster real local friendships and business collaboration.
+        - link "Learn More" [ref=f3e132] [cursor=pointer]:
+          - /url: community.html
+      - generic [ref=f3e133]:
+        - heading "Nights of Expression" [level=3] [ref=f3e134]
+        - paragraph [ref=f3e135]: Enjoy the local talent of Fishhawk during our recurring board game nights, spoken word poetry, and charity poker tournaments.
+        - link "Learn More" [ref=f3e136] [cursor=pointer]:
+          - /url: community.html
+    - link "See All Events" [ref=f3e138] [cursor=pointer]:
+      - /url: community.html
+  - contentinfo [ref=f3e139]:
+    - generic [ref=f3e140]:
+      - generic [ref=f3e141]:
+        - heading "Chill Cawfee" [level=3] [ref=f3e142]
+        - paragraph [ref=f3e143]: Fishhawk's neighborhood living room. Relocated to Lithia, Est. 2020. Rebuilding the physical third place.
+        - paragraph [ref=f3e144]: Poured by Hunter. Welcomed by Lisa.
+      - generic [ref=f3e145]:
+        - heading "Navigation" [level=4] [ref=f3e146]
+        - list [ref=f3e147]:
+          - listitem [ref=f3e148]:
+            - link "Home" [ref=f3e149] [cursor=pointer]:
+              - /url: index.html
+          - listitem [ref=f3e150]:
+            - link "Our Menu" [ref=f3e151] [cursor=pointer]:
+              - /url: menu.html
+          - listitem [ref=f3e152]:
+            - link "What is Kava?" [ref=f3e153] [cursor=pointer]:
+              - /url: kava.html
+          - listitem [ref=f3e154]:
+            - link "What is Kratom?" [ref=f3e155] [cursor=pointer]:
+              - /url: kratom.html
+          - listitem [ref=f3e156]:
+            - link "Our Story" [ref=f3e157] [cursor=pointer]:
+              - /url: about.html
+          - listitem [ref=f3e158]:
+            - link "Community & Events" [ref=f3e159] [cursor=pointer]:
+              - /url: community.html
+      - generic [ref=f3e160]:
+        - heading "Find the Shop" [level=4] [ref=f3e161]
+        - generic [ref=f3e162]:
+          - paragraph [ref=f3e163]: 16741 Fishhawk Blvd, Lithia, FL 33547
+          - paragraph [ref=f3e164]: lisa@chillcawfee.com
+          - paragraph [ref=f3e165]:
+            - link "Get Directions →" [ref=f3e166] [cursor=pointer]:
+              - /url: https://maps.app.goo.gl/ACGVDDwkX2eh1vUDA
+    - generic [ref=f3e167]:
+      - paragraph [ref=f3e168]: © 2026 Chill Cawfee. All rights reserved.
+      - generic [ref=f3e169]:
+        - link "FB" [ref=f3e170] [cursor=pointer]:
+          - /url: "#"
+        - link "IG" [ref=f3e171] [cursor=pointer]:
+          - /url: "#"

@@ -1,0 +1,211 @@
+- generic [active] [ref=f5e1]:
+  - banner [ref=f5e2]:
+    - generic [ref=f5e3]:
+      - link "Chill Cawfee Logo Chill Cawfee" [ref=f5e4] [cursor=pointer]:
+        - /url: index.html
+        - img "Chill Cawfee Logo" [ref=f5e5]
+        - generic [ref=f5e6]: Chill Cawfee
+      - button "Toggle Navigation Menu" [ref=f5e7] [cursor=pointer]
+      - navigation
+  - generic [ref=f5e12]:
+    - generic [ref=f5e13]:
+      - generic [ref=f5e14]: Unapologetically Rich
+      - heading "Comforting Drinks Poured with Care" [level=1] [ref=f5e15]
+      - paragraph [ref=f5e16]: Great coffee should be warm, sweet, and entirely unpretentious. Pull up a chair in our cozy Fishhawk living room and let Hunter pour you an unapologetically rich signature creation.
+      - link "Explore Menu" [ref=f5e17] [cursor=pointer]:
+        - /url: "#menu-tabs-section"
+    - img "Rich Caramel Coffee Pour" [ref=f5e19]
+  - generic [ref=f5e22]:
+    - generic [ref=f5e23]:
+      - button "Coffee & Espresso" [ref=f5e24] [cursor=pointer]
+      - button "Quigs Kava & Teas" [ref=f5e25] [cursor=pointer]
+      - button "Companion Food" [ref=f5e26] [cursor=pointer]
+    - generic [ref=f5e28]:
+      - generic [ref=f5e29]:
+        - heading "New Additions" [level=2] [ref=f5e30]
+        - paragraph [ref=f5e31]: Try some of our delicious new menu items, crafted with care and high-quality ingredients.
+      - generic [ref=f5e32]:
+        - generic [ref=f5e33]:
+          - generic [ref=f5e34]:
+            - img "Caramel Dream" [ref=f5e35]
+            - generic [ref=f5e36]: Sweet & Smooth
+          - generic [ref=f5e37]:
+            - generic [ref=f5e38]: Espresso Classic
+            - heading "Caramel Dream" [level=3] [ref=f5e39]
+            - paragraph [ref=f5e40]: A rich, velvety espresso blend layered with thick caramel sauce, steamed milk, and topped with fresh whipped cream and caramel drizzle.
+        - generic [ref=f5e41]:
+          - generic [ref=f5e42]:
+            - img "Double Dark Mocha" [ref=f5e43]
+            - generic [ref=f5e44]: Dark & Bold
+          - generic [ref=f5e45]:
+            - generic [ref=f5e46]: Espresso Classic
+            - heading "Double Dark Mocha" [level=3] [ref=f5e47]
+            - paragraph [ref=f5e48]: For the true chocolate lover, featuring two shots of espresso drowned in rich, dark cocoa and steamed milk, finished with whipped cream and chocolate drizzle.
+        - generic [ref=f5e49]:
+          - generic [ref=f5e50]:
+            - img "Cubano Nitro" [ref=f5e51]
+            - generic [ref=f5e52]: Strong & Smooth
+          - generic [ref=f5e53]:
+            - generic [ref=f5e54]: Nitro Brew
+            - heading "Cubano Nitro" [level=3] [ref=f5e55]
+            - paragraph [ref=f5e56]: A strong, smooth, and naturally sweet cold brew infused with nitrogen and a hint of traditional raw sugar for a velvety cascading head.
+        - generic [ref=f5e57]:
+          - generic [ref=f5e58]:
+            - img "Chai Latte" [ref=f5e59]
+            - generic [ref=f5e60]: Smooth & Spicy
+          - generic [ref=f5e61]:
+            - generic [ref=f5e62]: Signature Tea
+            - heading "Chai Latte" [level=3] [ref=f5e63]
+            - paragraph [ref=f5e64]: A warming, aromatic blend of black tea, exotic spices, and steamed milk, finished with a delicate dusting of cinnamon.
+        - generic [ref=f5e65]:
+          - generic [ref=f5e66]:
+            - img "Euphoric K-Tea Seltzer" [ref=f5e67]
+            - generic [ref=f5e68]: Bubbly & Vibrant
+          - generic [ref=f5e69]:
+            - generic [ref=f5e70]: Botanical Seltzer
+            - heading "Euphoric K-Tea Seltzer" [level=3] [ref=f5e71]
+            - paragraph [ref=f5e72]: A bubbly, refreshing seltzer infused with our signature botanical herbal tea blend, tropical fruit flavors, and a touch of sweetness.
+        - generic [ref=f5e73]:
+          - generic [ref=f5e74]:
+            - img "Cafe Latte" [ref=f5e75]
+            - generic [ref=f5e76]: Creamy & Smooth
+          - generic [ref=f5e77]:
+            - generic [ref=f5e78]: Espresso Classic
+            - heading "Cafe Latte" [level=3] [ref=f5e79]
+            - paragraph [ref=f5e80]: Freshly pulled shots of espresso combined with silky steamed milk and a light layer of microfoam for a classic, comforting cup.
+        - generic [ref=f5e81]:
+          - generic [ref=f5e82]:
+            - img "Cappuccino" [ref=f5e83]
+            - generic [ref=f5e84]: Frothy & Rich
+          - generic [ref=f5e85]:
+            - generic [ref=f5e86]: Espresso Classic
+            - heading "Cappuccino" [level=3] [ref=f5e87]
+            - paragraph [ref=f5e88]: A traditional espresso-to-milk ratio featuring equal parts espresso, steamed milk, and a thick, luxurious layer of warm milk foam.
+        - generic [ref=f5e89]:
+          - generic [ref=f5e90]:
+            - img "Espresso Shot" [ref=f5e91]
+            - generic [ref=f5e92]: Bold & Intense
+          - generic [ref=f5e93]:
+            - generic [ref=f5e94]: Espresso Classic
+            - heading "Espresso Shot" [level=3] [ref=f5e95]
+            - paragraph [ref=f5e96]: A concentrated, full-bodied shot of our custom specialty roast, boasting a thick golden crema and a rich, chocolatey finish.
+        - generic [ref=f5e97]:
+          - generic [ref=f5e98]:
+            - img "Matcha Latte" [ref=f5e99]
+            - generic [ref=f5e100]: Earthy & Sweet
+          - generic [ref=f5e101]:
+            - generic [ref=f5e102]: Specialty Tea
+            - heading "Matcha Latte" [level=3] [ref=f5e103]
+            - paragraph [ref=f5e104]: Stone-ground Japanese matcha whisked with warm water, sweetened slightly, and poured over choice of milk for a balanced, vibrant green tea latte.
+        - generic [ref=f5e105]:
+          - generic [ref=f5e106]:
+            - img "Nitro Coffee" [ref=f5e107]
+            - generic [ref=f5e108]: Velvety & Bold
+          - generic [ref=f5e109]:
+            - generic [ref=f5e110]: Nitro Brew
+            - heading "Nitro Coffee" [level=3] [ref=f5e111]
+            - paragraph [ref=f5e112]: Our slow-steeped cold brew infused with nitrogen on tap, creating a silky-smooth texture with a naturally sweet taste and creamy head.
+      - generic [ref=f5e113]:
+        - heading "Classic Selection" [level=2] [ref=f5e114]
+        - paragraph [ref=f5e115]: Expertly brewed classic and specialty beverages
+      - generic [ref=f5e116]:
+        - generic [ref=f5e117]:
+          - img "Americano" [ref=f5e119]
+          - generic [ref=f5e120]:
+            - generic [ref=f5e121]: Espresso Classic
+            - heading "Americano" [level=3] [ref=f5e122]
+            - paragraph [ref=f5e123]: A classic espresso shot lengthened with hot water, delivering a clean, bold coffee flavor.
+        - generic [ref=f5e124]:
+          - img "Cafe Con Leche" [ref=f5e126]
+          - generic [ref=f5e127]:
+            - generic [ref=f5e128]: Espresso Classic
+            - heading "Cafe Con Leche" [level=3] [ref=f5e129]
+            - paragraph [ref=f5e130]: Rich, freshly pulled espresso combined with warm steamed milk, served sweet or unsweet.
+        - generic [ref=f5e131]:
+          - img "Cafe Mocha" [ref=f5e133]
+          - generic [ref=f5e134]:
+            - generic [ref=f5e135]: Chocolate Treat
+            - heading "Cafe Mocha" [level=3] [ref=f5e136]
+            - paragraph [ref=f5e137]: Decadent dark chocolate melted into freshly pulled espresso and blended with creamy steamed milk.
+        - generic [ref=f5e138]:
+          - img "Cinnamon Toast Latte" [ref=f5e140]
+          - generic [ref=f5e141]:
+            - generic [ref=f5e142]: Signature Latte
+            - heading "Cinnamon Toast Latte" [level=3] [ref=f5e143]
+            - paragraph [ref=f5e144]: A cozy latte featuring rich espresso, steamed milk, sweet cinnamon brown sugar syrup, and a pinch of spice.
+        - generic [ref=f5e145]:
+          - img "Drip Coffee" [ref=f5e147]
+          - generic [ref=f5e148]:
+            - generic [ref=f5e149]: House Brew
+            - heading "Drip Coffee" [level=3] [ref=f5e150]
+            - paragraph [ref=f5e151]: Smooth, freshly brewed drip coffee using our custom-roasted house blend beans.
+        - generic [ref=f5e152]:
+          - img "Honey Haze Latte" [ref=f5e154]
+          - generic [ref=f5e155]:
+            - generic [ref=f5e156]: Signature Latte
+            - heading "Honey Haze Latte" [level=3] [ref=f5e157]
+            - paragraph [ref=f5e158]: A golden latte sweetened with organic local honey, a touch of hazelnut syrup, and creamy steamed milk.
+        - generic [ref=f5e159]:
+          - img "Italian Macchiato" [ref=f5e161]
+          - generic [ref=f5e162]:
+            - generic [ref=f5e163]: Espresso Classic
+            - heading "Italian Macchiato" [level=3] [ref=f5e164]
+            - paragraph [ref=f5e165]: A bold shot of espresso marked with a small dollop of velvety milk foam.
+      - heading "Full Coffee & Espresso Menu" [level=2] [ref=f5e166]
+      - img "Chill Cawfee Espresso & Coffee Menu" [ref=f5e167]
+      - link "Download Menu (PNG)" [ref=f5e169] [cursor=pointer]:
+        - /url: chill-cawfee-menu.png
+  - generic [ref=f5e171]:
+    - generic [ref=f5e172]: Our Philosophy
+    - heading "“Great coffee doesn’t have to be intimidating to be absolutely delicious. We skip the snobbery and focus on making every single cup feel like a warm, comforting welcome to our neighborhood.”" [level=2] [ref=f5e173]
+    - paragraph [ref=f5e174]: Lisa Henney, Co-Founder
+  - generic [ref=f5e177]:
+    - heading "Ready for a Caramel Dream?" [level=2] [ref=f5e178]
+    - paragraph [ref=f5e179]: We are open daily at our new home in Lithia. Pull up a chair, catch up with Lisa and Hunter, and enjoy a rich drink made just for you.
+    - generic [ref=f5e180]:
+      - link "Find Our Shop" [ref=f5e181] [cursor=pointer]:
+        - /url: https://maps.app.goo.gl/ACGVDDwkX2eh1vUDA
+      - link "Order Delivery" [ref=f5e182] [cursor=pointer]:
+        - /url: https://www.ubereats.com/store/quigs-kava-lounge/8v0jd14UXYOxqRMc4G4RRA
+  - contentinfo [ref=f5e183]:
+    - generic [ref=f5e184]:
+      - generic [ref=f5e185]:
+        - heading "Chill Cawfee" [level=3] [ref=f5e186]
+        - paragraph [ref=f5e187]: Fishhawk's neighborhood living room. Relocated to Lithia, Est. 2020. Rebuilding the physical third place.
+        - paragraph [ref=f5e188]: Poured by Hunter. Welcomed by Lisa.
+      - generic [ref=f5e189]:
+        - heading "Navigation" [level=4] [ref=f5e190]
+        - list [ref=f5e191]:
+          - listitem [ref=f5e192]:
+            - link "Home" [ref=f5e193] [cursor=pointer]:
+              - /url: index.html
+          - listitem [ref=f5e194]:
+            - link "Our Menu" [ref=f5e195] [cursor=pointer]:
+              - /url: menu.html
+          - listitem [ref=f5e196]:
+            - link "What is Kava?" [ref=f5e197] [cursor=pointer]:
+              - /url: kava.html
+          - listitem [ref=f5e198]:
+            - link "What is Kratom?" [ref=f5e199] [cursor=pointer]:
+              - /url: kratom.html
+          - listitem [ref=f5e200]:
+            - link "Our Story" [ref=f5e201] [cursor=pointer]:
+              - /url: about.html
+          - listitem [ref=f5e202]:
+            - link "Community & Events" [ref=f5e203] [cursor=pointer]:
+              - /url: community.html
+      - generic [ref=f5e204]:
+        - heading "Find the Shop" [level=4] [ref=f5e205]
+        - generic [ref=f5e206]:
+          - paragraph [ref=f5e207]: 16741 Fishhawk Blvd, Lithia, FL 33547
+          - paragraph [ref=f5e208]: lisa@chillcawfee.com
+          - paragraph [ref=f5e209]:
+            - link "Get Directions →" [ref=f5e210] [cursor=pointer]:
+              - /url: https://maps.app.goo.gl/ACGVDDwkX2eh1vUDA
+    - generic [ref=f5e211]:
+      - paragraph [ref=f5e212]: © 2026 Chill Cawfee. All rights reserved.
+      - generic [ref=f5e213]:
+        - link "FB" [ref=f5e214] [cursor=pointer]:
+          - /url: "#"
+        - link "IG" [ref=f5e215] [cursor=pointer]:
+          - /url: "#"

@@ -1,0 +1,92 @@
+- generic [active] [ref=f6e1]:
+  - banner [ref=f6e2]:
+    - generic [ref=f6e3]:
+      - link "Chill Cawfee Logo Chill Cawfee" [ref=f6e4] [cursor=pointer]:
+        - /url: index.html
+        - img "Chill Cawfee Logo" [ref=f6e5]
+        - generic [ref=f6e6]: Chill Cawfee
+      - button "Toggle Navigation Menu" [ref=f6e7] [cursor=pointer]
+      - navigation
+  - generic [ref=f6e12]:
+    - generic [ref=f6e13]:
+      - generic [ref=f6e14]: Our Story
+      - heading [level=1] [ref=f6e15]:
+        - text: Fishhawk's Family-Run
+        - emphasis [ref=f6e16]: Living Room
+      - paragraph [ref=f6e17]: We started Chill Cawfee in 2020 to bring neighbors together. Today, mother and son Lisa and Hunter serve up rich custom drinks and a warm physical space for real connection.
+      - link "Come Visit Us" [ref=f6e18] [cursor=pointer]:
+        - /url: https://maps.app.goo.gl/ACGVDDwkX2eh1vUDA
+    - img "Lisa and family at coffee shop" [ref=f6e20]
+  - generic [ref=f6e23]:
+    - generic [ref=f6e24]:
+      - generic [ref=f6e25]: The Timeline
+      - heading "From Valrico to Fishhawk" [level=2] [ref=f6e26]
+      - paragraph [ref=f6e27]: Our dream began at the start of Covid. We realized people needed physical connection more than ever, leading us to establish a true neighborhood third place.
+    - generic [ref=f6e28]:
+      - generic [ref=f6e30]:
+        - generic [ref=f6e31]: "2020"
+        - heading "The Dream Begins" [level=3] [ref=f6e32]
+        - paragraph [ref=f6e33]: Lisa and Tom founded Chill Cawfee in Valrico during a time of isolation, determined to create a comforting sanctuary where neighbors could share a table and a warm handshake.
+      - generic [ref=f6e35]:
+        - generic [ref=f6e36]: Present Day
+        - heading "Our New Home" [level=3] [ref=f6e37]
+        - paragraph [ref=f6e38]: Now operated by Lisa and Tom's son Hunter, we relocated to Fishhawk to serve our home community. We brought our signature sweet drinks and lively event calendar with us.
+  - generic [ref=f6e41]:
+    - img "Lisa and Hunter Behind the Bar at Chill Cawfee" [ref=f6e44]
+    - generic [ref=f6e46]:
+      - generic [ref=f6e47]: Behind the Bar
+      - heading "Lisa and Hunter" [level=2] [ref=f6e48]
+      - paragraph [ref=f6e49]: Lisa brings the welcoming warmth that turns first-time visitors into daily regulars, hosting book clubs and networking groups. Her son Hunter handles the bar, pulling rich espresso shots and crafting our signature sweet dreams.
+      - paragraph [ref=f6e50]: Together, they keep the shop running as a lively, unpretentious living room. Whether you are here for an entrepreneurial mastermind or a quiet afternoon escape, they always make sure there is an open chair for you.
+      - link "Join an Event" [ref=f6e51] [cursor=pointer]:
+        - /url: community.html
+  - generic [ref=f6e54]:
+    - heading "Pull Up a Chair" [level=2] [ref=f6e55]
+    - paragraph [ref=f6e56]: We are open next to Aldi. Stop by for a Caramel Dream, chat with Lisa and Hunter, and join us in Fishhawk's favorite neighborhood living room.
+    - generic [ref=f6e57]:
+      - link "Find the Shop" [ref=f6e58] [cursor=pointer]:
+        - /url: https://maps.app.goo.gl/ACGVDDwkX2eh1vUDA
+      - link "View Menu" [ref=f6e59] [cursor=pointer]:
+        - /url: menu.html
+  - contentinfo [ref=f6e60]:
+    - generic [ref=f6e61]:
+      - generic [ref=f6e62]:
+        - heading "Chill Cawfee" [level=3] [ref=f6e63]
+        - paragraph [ref=f6e64]: Fishhawk's neighborhood living room. Relocated to Lithia, Est. 2020. Rebuilding the physical third place.
+        - paragraph [ref=f6e65]: Poured by Hunter. Welcomed by Lisa.
+      - generic [ref=f6e66]:
+        - heading "Navigation" [level=4] [ref=f6e67]
+        - list [ref=f6e68]:
+          - listitem [ref=f6e69]:
+            - link "Home" [ref=f6e70] [cursor=pointer]:
+              - /url: index.html
+          - listitem [ref=f6e71]:
+            - link "Our Menu" [ref=f6e72] [cursor=pointer]:
+              - /url: menu.html
+          - listitem [ref=f6e73]:
+            - link "What is Kava?" [ref=f6e74] [cursor=pointer]:
+              - /url: kava.html
+          - listitem [ref=f6e75]:
+            - link "What is Kratom?" [ref=f6e76] [cursor=pointer]:
+              - /url: kratom.html
+          - listitem [ref=f6e77]:
+            - link "Our Story" [ref=f6e78] [cursor=pointer]:
+              - /url: about.html
+          - listitem [ref=f6e79]:
+            - link "Community & Events" [ref=f6e80] [cursor=pointer]:
+              - /url: community.html
+      - generic [ref=f6e81]:
+        - heading "Find the Shop" [level=4] [ref=f6e82]
+        - generic [ref=f6e83]:
+          - paragraph [ref=f6e84]: 16741 Fishhawk Blvd, Lithia, FL 33547
+          - paragraph [ref=f6e85]: lisa@chillcawfee.com
+          - paragraph [ref=f6e86]:
+            - link "Get Directions →" [ref=f6e87] [cursor=pointer]:
+              - /url: https://maps.app.goo.gl/ACGVDDwkX2eh1vUDA
+    - generic [ref=f6e88]:
+      - paragraph [ref=f6e89]: © 2026 Chill Cawfee. All rights reserved.
+      - generic [ref=f6e90]:
+        - link "FB" [ref=f6e91] [cursor=pointer]:
+          - /url: "#"
+        - link "IG" [ref=f6e92] [cursor=pointer]:
+          - /url: "#"

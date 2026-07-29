@@ -1,0 +1,128 @@
+- generic [active] [ref=f9e1]:
+  - banner [ref=f9e2]:
+    - generic [ref=f9e3]:
+      - link "Chill Cawfee Logo Chill Cawfee" [ref=f9e4] [cursor=pointer]:
+        - /url: index.html
+        - img "Chill Cawfee Logo" [ref=f9e5]
+        - generic [ref=f9e6]: Chill Cawfee
+      - button "Toggle Navigation Menu" [ref=f9e7] [cursor=pointer]
+      - navigation
+  - generic [ref=f9e12]:
+    - generic [ref=f9e13]:
+      - generic [ref=f9e14]: Our Third Place
+      - heading "Where Fishhawk Comes Together" [level=1] [ref=f9e15]
+      - paragraph [ref=f9e16]: Skip the screen and pull up a chair. From local masterminds to lively game nights, we host weekly gatherings designed to turn neighbors into lifelong friends.
+      - link "View Schedule" [ref=f9e17] [cursor=pointer]:
+        - /url: "#schedule-section"
+    - img "Community Gathering at Chill Cawfee" [ref=f9e19]
+  - generic [ref=f9e22]:
+    - generic [ref=f9e23]:
+      - generic [ref=f9e24]: Weekly Schedule
+      - heading "The Weekly Lineup" [level=2] [ref=f9e25]
+      - paragraph [ref=f9e26]: There is always a seat saved for you. Click on any event card below to expand session details and timings.
+    - generic [ref=f9e27]:
+      - generic [ref=f9e28] [cursor=pointer]:
+        - generic [ref=f9e29]: Wednesdays & Fridays
+        - generic [ref=f9e30]: Morning Sessions
+        - heading "Masterminds & Networking" [level=3] [ref=f9e31]
+        - paragraph [ref=f9e32]: Connect with local builders, creators, and business leaders in real life.
+        - generic [ref=f9e33]:
+          - paragraph [ref=f9e34]: "Founders Table:"
+          - paragraph [ref=f9e35]: Wednesdays at 12:30 PM & Fridays at 8:00 AM. Meet remote workers, small business owners, and local founders to exchange ideas, solve challenges, and spark real partnerships over rich coffee.
+        - generic [ref=f9e36]:
+          - text: View Timing Details
+          - generic [ref=f9e37]: ↓
+      - generic [ref=f9e38] [cursor=pointer]:
+        - generic [ref=f9e39]: Thursdays & Saturdays
+        - generic [ref=f9e40]: Evening Gatherings
+        - heading "Game Nights & Trivia" [level=3] [ref=f9e41]
+        - paragraph [ref=f9e42]: Unplug and enjoy some friendly competition with your Fishhawk neighbors.
+        - generic [ref=f9e43]:
+          - paragraph [ref=f9e44]: "Weekly Play:"
+          - paragraph [ref=f9e45]: Bring your favorite board games or join a welcoming table. Saturday nights feature charity poker tournaments supporting local Lithia and Fishhawk non-profit organizations. Hunter pours custom creations all evening.
+        - generic [ref=f9e46]:
+          - text: View Timing Details
+          - generic [ref=f9e47]: ↓
+      - generic [ref=f9e48] [cursor=pointer]:
+        - generic [ref=f9e49]: Monthly Sunday
+        - generic [ref=f9e50]: Night of Expression
+        - heading "Spoken Word & Theater" [level=3] [ref=f9e51]
+        - paragraph [ref=f9e52]: Experience local artistic talents inside a cozy, acoustic setting.
+        - generic [ref=f9e53]:
+          - paragraph [ref=f9e54]: "Creative Stage:"
+          - paragraph [ref=f9e55]: Join us once a month on Sunday evening to listen to local poets, acoustic singer-songwriters, and storytellers. An intimate, warm living room setting designed for genuine connection and local expression.
+        - generic [ref=f9e56]:
+          - text: View Timing Details
+          - generic [ref=f9e57]: ↓
+  - generic [ref=f9e59]:
+    - generic [ref=f9e60]:
+      - generic [ref=f9e61]: Our Groups
+      - heading "Gatherings Open to All" [level=2] [ref=f9e62]
+      - paragraph [ref=f9e63]: No membership dues, no strict agendas. Just real people meeting in real life over comforting, rich drinks.
+    - generic [ref=f9e64]:
+      - generic [ref=f9e65]:
+        - generic [ref=f9e66]: Entrepreneurs
+        - heading "Business Mastermind" [level=3] [ref=f9e67]
+        - paragraph [ref=f9e68]: A morning group of local builders, creators, and professionals sharing real-world strategies, business advice, and genuine handshakes.
+      - generic [ref=f9e69]:
+        - generic [ref=f9e70]: Community
+        - heading "Book Clubs & Theater" [level=3] [ref=f9e71]
+        - paragraph [ref=f9e72]: Diving into monthly reads and hosting local stage readings. Perfect for creative minds looking for a physical third place.
+      - generic [ref=f9e73]:
+        - generic [ref=f9e74]: Social
+        - heading "Men's Meetups" [level=3] [ref=f9e75]
+        - paragraph [ref=f9e76]: A relaxed space for guys in the community to catch up, talk life, and enjoy a Double Dark Mocha together.
+  - generic [ref=f9e78]:
+    - generic [ref=f9e79]: Resident Spotlight
+    - heading "“Chill Cawfee isn't just where I get my morning drink—it's where I found my community when we moved to Fishhawk.”" [level=2] [ref=f9e80]
+    - paragraph [ref=f9e81]: Sarah M., Lithia Resident
+  - generic [ref=f9e84]:
+    - heading "Pull Up a Chair Today" [level=2] [ref=f9e85]
+    - paragraph [ref=f9e86]: We are located in the heart of Lithia, ready to welcome you with custom drinks and friendly faces.
+    - generic [ref=f9e87]:
+      - link "Get Directions" [ref=f9e88] [cursor=pointer]:
+        - /url: https://maps.app.goo.gl/ACGVDDwkX2eh1vUDA
+      - link "View Menu" [ref=f9e89] [cursor=pointer]:
+        - /url: menu.html
+  - contentinfo [ref=f9e90]:
+    - generic [ref=f9e91]:
+      - generic [ref=f9e92]:
+        - heading "Chill Cawfee" [level=3] [ref=f9e93]
+        - paragraph [ref=f9e94]: Fishhawk's neighborhood living room. Relocated to Lithia, Est. 2020. Rebuilding the physical third place.
+        - paragraph [ref=f9e95]: Poured by Hunter. Welcomed by Lisa.
+      - generic [ref=f9e96]:
+        - heading "Navigation" [level=4] [ref=f9e97]
+        - list [ref=f9e98]:
+          - listitem [ref=f9e99]:
+            - link "Home" [ref=f9e100] [cursor=pointer]:
+              - /url: index.html
+          - listitem [ref=f9e101]:
+            - link "Our Menu" [ref=f9e102] [cursor=pointer]:
+              - /url: menu.html
+          - listitem [ref=f9e103]:
+            - link "What is Kava?" [ref=f9e104] [cursor=pointer]:
+              - /url: kava.html
+          - listitem [ref=f9e105]:
+            - link "What is Kratom?" [ref=f9e106] [cursor=pointer]:
+              - /url: kratom.html
+          - listitem [ref=f9e107]:
+            - link "Our Story" [ref=f9e108] [cursor=pointer]:
+              - /url: about.html
+          - listitem [ref=f9e109]:
+            - link "Community & Events" [ref=f9e110] [cursor=pointer]:
+              - /url: community.html
+      - generic [ref=f9e111]:
+        - heading "Find the Shop" [level=4] [ref=f9e112]
+        - generic [ref=f9e113]:
+          - paragraph [ref=f9e114]: 16741 Fishhawk Blvd, Lithia, FL 33547
+          - paragraph [ref=f9e115]: lisa@chillcawfee.com
+          - paragraph [ref=f9e116]:
+            - link "Get Directions →" [ref=f9e117] [cursor=pointer]:
+              - /url: https://maps.app.goo.gl/ACGVDDwkX2eh1vUDA
+    - generic [ref=f9e118]:
+      - paragraph [ref=f9e119]: © 2026 Chill Cawfee. All rights reserved.
+      - generic [ref=f9e120]:
+        - link "FB" [ref=f9e121] [cursor=pointer]:
+          - /url: "#"
+        - link "IG" [ref=f9e122] [cursor=pointer]:
+          - /url: "#"
