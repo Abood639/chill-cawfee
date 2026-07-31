@@ -93,12 +93,6 @@
     .menu-pane.active {
       display: grid;
     }
-    .menu-grid-list {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 32px;
-      margin-top: 20px;
-    }
     @media (max-width: 768px) {
       .menu-tabs {
         flex-wrap: wrap;
@@ -111,37 +105,66 @@
         flex: 1 1 auto;
         text-align: center;
       }
-      .menu-grid-list {
-        grid-template-columns: 1fr;
-        gap: 24px;
-      }
     }
-    .menu-item-row {
+    /* Menu Gallery Grid */
+    .cawfee-menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 20px;
+      margin-top: 32px;
+      width: 100%;
+    }
+    .cawfee-menu-item {
+      position: relative;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      border: 1px solid rgba(43, 26, 19, 0.1);
+      box-shadow: var(--shadow-sm);
+      background: var(--bg-secondary);
+      transition: var(--transition-smooth);
       display: flex;
-      justify-content: space-between;
-      border-bottom: 1px dashed rgba(43, 26, 19, 0.15);
-      padding-bottom: 12px;
-      margin-bottom: 8px;
+      flex-direction: column;
     }
-    .menu-item-title {
+    .cawfee-menu-item:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-md);
+    }
+    .menu-item-image-wrapper {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      overflow: hidden;
+    }
+    .cawfee-menu-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: var(--transition-smooth);
+    }
+    .cawfee-menu-item:hover .cawfee-menu-img {
+      transform: scale(1.05);
+    }
+    .menu-item-info {
+      padding: 16px;
+      background: var(--bg-primary);
+      text-align: center;
+      border-top: 1px solid rgba(43, 26, 19, 0.1);
+      flex-grow: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .menu-item-name {
       font-family: var(--font-serif);
-      font-size: 1.25rem;
       font-weight: 600;
+      font-size: 1rem;
       color: var(--color-dark);
-    }
-    .menu-item-price {
-      font-family: var(--font-sans);
-      font-weight: 700;
-      color: var(--color-terracotta);
-    }
-    .menu-item-desc {
-      color: var(--color-text-muted);
-      font-size: 0.95rem;
-      max-width: 85%;
+      margin: 0;
+      line-height: 1.3;
     }
     @media (max-width: 768px) {
-      .menu-grid-list {
-        grid-template-columns: 1fr;
+      .cawfee-menu-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 14px;
       }
     }
     .menu-image-container {
@@ -240,234 +263,72 @@
             <a href="chill-cawfee-menu.webp" download="Chill-Cawfee-Menu.png" class="btn btn-primary">Download Menu (PNG)</a>
           </div>
 
-          
-          
-          <!-- New Menu Items Section -->
-          <div class="menu-grid-header animate-on-scroll text-center" style="margin-top: 24px; margin-bottom: 40px; width: 100%; text-align: center;">
-            <h2 class="section-title" style="margin-bottom: 12px; text-align: center;">New Additions</h2>
-            <p class="section-desc" style="max-width: 600px; margin: 0 auto; color: var(--color-text-muted); text-align: center;">Try some of our delicious new menu items, crafted with care and high-quality ingredients.</p>
+
+
+          <!-- Drink Highlights Gallery -->
+          <div class="menu-grid-header animate-on-scroll text-center" style="margin-top: 24px; margin-bottom: 0; width: 100%; text-align: center; border-top: 1px solid rgba(43, 26, 19, 0.1); padding-top: 40px;">
+            <h2 class="section-title" style="margin-bottom: 12px; text-align: center;">Drink Highlights</h2>
+            <p class="section-desc" style="max-width: 600px; margin: 0 auto; color: var(--color-text-muted); text-align: center;">Visual gallery of our specialty lattes and fresh brews</p>
           </div>
-          
-          <div class="grid-3 animate-on-scroll" style="margin-bottom: 80px; width: 100%;">
-            <!-- Caramel Dream -->
-            <div class="glass-card drink-card animate-on-scroll stagger-1">
-              <div class="drink-img-wrapper hot-steam">
-                <img src="caramel-dream.webp" alt="Caramel Dream" class="drink-img">
-                <span class="drink-tag">Sweet &amp; Smooth</span>
+
+          <div class="cawfee-menu-grid animate-on-scroll" style="margin-bottom: 80px;">
+            <div class="cawfee-menu-item">
+              <div class="menu-item-image-wrapper">
+                <img src="assets/menu_gallery/menu_1_Mv4Ut7PvFAb1KpRZkt7Ykgq0dWPmTXZ.webp" alt="Americano" class="cawfee-menu-img" loading="lazy">
               </div>
-              <div class="drink-info" style="padding: 24px; text-align: left;">
-                <span class="drink-meta" style="font-size: 0.85rem; font-weight: 600; text-transform: uppercase; color: var(--color-terracotta); letter-spacing: 0.05em; display: block; margin-bottom: 8px;">Espresso Classic</span>
-                <h3 class="drink-name" style="font-family: var(--font-serif); font-size: 1.4rem; font-weight: 600; color: var(--color-dark); margin-bottom: 12px;">Caramel Dream</h3>
-                <p class="drink-desc" style="color: var(--color-text-muted); font-size: 0.95rem; line-height: 1.6; margin: 0;">A rich, velvety espresso blend layered with thick caramel sauce, steamed milk, and topped with fresh whipped cream and caramel drizzle.</p>
+              <div class="menu-item-info">
+                <h4 class="menu-item-name">Americano</h4>
               </div>
             </div>
-
-            <!-- Double Dark Mocha -->
-            <div class="glass-card drink-card animate-on-scroll stagger-2">
-              <div class="drink-img-wrapper hot-steam">
-                <img src="double-dark-mocha.webp" alt="Double Dark Mocha" class="drink-img">
-                <span class="drink-tag">Dark &amp; Bold</span>
+            <div class="cawfee-menu-item">
+              <div class="menu-item-image-wrapper">
+                <img src="assets/menu_gallery/menu_1tBucPjtM2pS_AhozH6NDhYAgIn-6z1hr.webp" alt="Café Con Leche" class="cawfee-menu-img" loading="lazy">
               </div>
-              <div class="drink-info" style="padding: 24px; text-align: left;">
-                <span class="drink-meta" style="font-size: 0.85rem; font-weight: 600; text-transform: uppercase; color: var(--color-terracotta); letter-spacing: 0.05em; display: block; margin-bottom: 8px;">Espresso Classic</span>
-                <h3 class="drink-name" style="font-family: var(--font-serif); font-size: 1.4rem; font-weight: 600; color: var(--color-dark); margin-bottom: 12px;">Double Dark Mocha</h3>
-                <p class="drink-desc" style="color: var(--color-text-muted); font-size: 0.95rem; line-height: 1.6; margin: 0;">For the true chocolate lover, featuring two shots of espresso drowned in rich, dark cocoa and steamed milk, finished with whipped cream and chocolate drizzle.</p>
+              <div class="menu-item-info">
+                <h4 class="menu-item-name">Café Con Leche</h4>
               </div>
             </div>
-
-            <!-- Cubano Nitro -->
-            <div class="glass-card drink-card animate-on-scroll stagger-3">
-              <div class="drink-img-wrapper hot-steam">
-                <img src="cubano-nitro.webp" alt="Cubano Nitro" class="drink-img">
-                <span class="drink-tag">Strong &amp; Smooth</span>
+            <div class="cawfee-menu-item">
+              <div class="menu-item-image-wrapper">
+                <img src="assets/menu_gallery/menu_1uQuJzTOQ_Rm-6GlV48xn1rLlD2Noin6H.webp" alt="Café Mocha" class="cawfee-menu-img" loading="lazy">
               </div>
-              <div class="drink-info" style="padding: 24px; text-align: left;">
-                <span class="drink-meta" style="font-size: 0.85rem; font-weight: 600; text-transform: uppercase; color: var(--color-terracotta); letter-spacing: 0.05em; display: block; margin-bottom: 8px;">Nitro Brew</span>
-                <h3 class="drink-name" style="font-family: var(--font-serif); font-size: 1.4rem; font-weight: 600; color: var(--color-dark); margin-bottom: 12px;">Cubano Nitro</h3>
-                <p class="drink-desc" style="color: var(--color-text-muted); font-size: 0.95rem; line-height: 1.6; margin: 0;">A strong, smooth, and naturally sweet cold brew infused with nitrogen and a hint of traditional raw sugar for a velvety cascading head.</p>
+              <div class="menu-item-info">
+                <h4 class="menu-item-name">Café Mocha</h4>
               </div>
             </div>
-
-            <!-- Chai Latte -->
-            <div class="glass-card drink-card animate-on-scroll stagger-1">
-              <div class="drink-img-wrapper hot-steam">
-                <img src="chai-latte.webp" alt="Chai Latte" class="drink-img">
-                <span class="drink-tag">Smooth &amp; Spicy</span>
+            <div class="cawfee-menu-item">
+              <div class="menu-item-image-wrapper">
+                <img src="assets/menu_gallery/menu_11gdLwbXWDTw-OACbXU6b6ZiUz8QluRcI.webp" alt="Cinnamon Toast Latte" class="cawfee-menu-img" loading="lazy">
               </div>
-              <div class="drink-info" style="padding: 24px; text-align: left;">
-                <span class="drink-meta" style="font-size: 0.85rem; font-weight: 600; text-transform: uppercase; color: var(--color-terracotta); letter-spacing: 0.05em; display: block; margin-bottom: 8px;">Signature Tea</span>
-                <h3 class="drink-name" style="font-family: var(--font-serif); font-size: 1.4rem; font-weight: 600; color: var(--color-dark); margin-bottom: 12px;">Chai Latte</h3>
-                <p class="drink-desc" style="color: var(--color-text-muted); font-size: 0.95rem; line-height: 1.6; margin: 0;">A warming, aromatic blend of black tea, exotic spices, and steamed milk, finished with a delicate dusting of cinnamon.</p>
+              <div class="menu-item-info">
+                <h4 class="menu-item-name">Cinnamon Toast Latte</h4>
               </div>
             </div>
-
-            <!-- Euphoric K-Tea Seltzer -->
-            <div class="glass-card drink-card animate-on-scroll stagger-2">
-              <div class="drink-img-wrapper hot-steam">
-                <img src="euphoric-k-tea-seltzer.webp" alt="Euphoric K-Tea Seltzer" class="drink-img">
-                <span class="drink-tag">Bubbly &amp; Vibrant</span>
+            <div class="cawfee-menu-item">
+              <div class="menu-item-image-wrapper">
+                <img src="assets/menu_gallery/menu_1xiNWoa-Dg70kqQYtQvFEsyrQT6Te1BGB.webp" alt="Drip Coffee" class="cawfee-menu-img" loading="lazy">
               </div>
-              <div class="drink-info" style="padding: 24px; text-align: left;">
-                <span class="drink-meta" style="font-size: 0.85rem; font-weight: 600; text-transform: uppercase; color: var(--color-terracotta); letter-spacing: 0.05em; display: block; margin-bottom: 8px;">Botanical Seltzer</span>
-                <h3 class="drink-name" style="font-family: var(--font-serif); font-size: 1.4rem; font-weight: 600; color: var(--color-dark); margin-bottom: 12px;">Euphoric K-Tea Seltzer</h3>
-                <p class="drink-desc" style="color: var(--color-text-muted); font-size: 0.95rem; line-height: 1.6; margin: 0;">A bubbly, refreshing seltzer infused with our signature botanical herbal tea blend, tropical fruit flavors, and a touch of sweetness.</p>
+              <div class="menu-item-info">
+                <h4 class="menu-item-name">Drip Coffee</h4>
               </div>
             </div>
-
-            <!-- Cafe Latte -->
-            <div class="glass-card drink-card animate-on-scroll stagger-3">
-              <div class="drink-img-wrapper hot-steam">
-                <img src="cafe-latte.webp" alt="Cafe Latte" class="drink-img">
-                <span class="drink-tag">Creamy &amp; Smooth</span>
+            <div class="cawfee-menu-item">
+              <div class="menu-item-image-wrapper">
+                <img src="assets/menu_gallery/menu_1TQOLXtwjY42HU8Zsy2Mezh4i1uPWp-n9.webp" alt="Honey Haze Latte" class="cawfee-menu-img" loading="lazy">
               </div>
-              <div class="drink-info" style="padding: 24px; text-align: left;">
-                <span class="drink-meta" style="font-size: 0.85rem; font-weight: 600; text-transform: uppercase; color: var(--color-terracotta); letter-spacing: 0.05em; display: block; margin-bottom: 8px;">Espresso Classic</span>
-                <h3 class="drink-name" style="font-family: var(--font-serif); font-size: 1.4rem; font-weight: 600; color: var(--color-dark); margin-bottom: 12px;">Cafe Latte</h3>
-                <p class="drink-desc" style="color: var(--color-text-muted); font-size: 0.95rem; line-height: 1.6; margin: 0;">Freshly pulled shots of espresso combined with silky steamed milk and a light layer of microfoam for a classic, comforting cup.</p>
+              <div class="menu-item-info">
+                <h4 class="menu-item-name">Honey Haze Latte</h4>
               </div>
             </div>
-
-            <!-- Cappuccino -->
-            <div class="glass-card drink-card animate-on-scroll stagger-1">
-              <div class="drink-img-wrapper hot-steam">
-                <img src="cappuccino.webp" alt="Cappuccino" class="drink-img">
-                <span class="drink-tag">Frothy &amp; Rich</span>
+            <div class="cawfee-menu-item">
+              <div class="menu-item-image-wrapper">
+                <img src="assets/menu_gallery/menu_1w7saZ0YetJsIRwc66kz7QopVm-fK5flM.webp" alt="Italian Macchiato" class="cawfee-menu-img" loading="lazy">
               </div>
-              <div class="drink-info" style="padding: 24px; text-align: left;">
-                <span class="drink-meta" style="font-size: 0.85rem; font-weight: 600; text-transform: uppercase; color: var(--color-terracotta); letter-spacing: 0.05em; display: block; margin-bottom: 8px;">Espresso Classic</span>
-                <h3 class="drink-name" style="font-family: var(--font-serif); font-size: 1.4rem; font-weight: 600; color: var(--color-dark); margin-bottom: 12px;">Cappuccino</h3>
-                <p class="drink-desc" style="color: var(--color-text-muted); font-size: 0.95rem; line-height: 1.6; margin: 0;">A traditional espresso-to-milk ratio featuring equal parts espresso, steamed milk, and a thick, luxurious layer of warm milk foam.</p>
-              </div>
-            </div>
-
-            <!-- Espresso Shot -->
-            <div class="glass-card drink-card animate-on-scroll stagger-2">
-              <div class="drink-img-wrapper hot-steam">
-                <img src="espresso-shot.webp" alt="Espresso Shot" class="drink-img">
-                <span class="drink-tag">Bold &amp; Intense</span>
-              </div>
-              <div class="drink-info" style="padding: 24px; text-align: left;">
-                <span class="drink-meta" style="font-size: 0.85rem; font-weight: 600; text-transform: uppercase; color: var(--color-terracotta); letter-spacing: 0.05em; display: block; margin-bottom: 8px;">Espresso Classic</span>
-                <h3 class="drink-name" style="font-family: var(--font-serif); font-size: 1.4rem; font-weight: 600; color: var(--color-dark); margin-bottom: 12px;">Espresso Shot</h3>
-                <p class="drink-desc" style="color: var(--color-text-muted); font-size: 0.95rem; line-height: 1.6; margin: 0;">A concentrated, full-bodied shot of our custom specialty roast, boasting a thick golden crema and a rich, chocolatey finish.</p>
-              </div>
-            </div>
-
-            <!-- Matcha Latte -->
-            <div class="glass-card drink-card animate-on-scroll stagger-3">
-              <div class="drink-img-wrapper hot-steam">
-                <img src="matcha-latte.webp" alt="Matcha Latte" class="drink-img">
-                <span class="drink-tag">Earthy &amp; Sweet</span>
-              </div>
-              <div class="drink-info" style="padding: 24px; text-align: left;">
-                <span class="drink-meta" style="font-size: 0.85rem; font-weight: 600; text-transform: uppercase; color: var(--color-terracotta); letter-spacing: 0.05em; display: block; margin-bottom: 8px;">Specialty Tea</span>
-                <h3 class="drink-name" style="font-family: var(--font-serif); font-size: 1.4rem; font-weight: 600; color: var(--color-dark); margin-bottom: 12px;">Matcha Latte</h3>
-                <p class="drink-desc" style="color: var(--color-text-muted); font-size: 0.95rem; line-height: 1.6; margin: 0;">Stone-ground Japanese matcha whisked with warm water, sweetened slightly, and poured over choice of milk for a balanced, vibrant green tea latte.</p>
-              </div>
-            </div>
-
-            <!-- Nitro Coffee -->
-            <div class="glass-card drink-card animate-on-scroll stagger-1">
-              <div class="drink-img-wrapper hot-steam">
-                <img src="nitro-coffee.webp" alt="Nitro Coffee" class="drink-img">
-                <span class="drink-tag">Velvety &amp; Bold</span>
-              </div>
-              <div class="drink-info" style="padding: 24px; text-align: left;">
-                <span class="drink-meta" style="font-size: 0.85rem; font-weight: 600; text-transform: uppercase; color: var(--color-terracotta); letter-spacing: 0.05em; display: block; margin-bottom: 8px;">Nitro Brew</span>
-                <h3 class="drink-name" style="font-family: var(--font-serif); font-size: 1.4rem; font-weight: 600; color: var(--color-dark); margin-bottom: 12px;">Nitro Coffee</h3>
-                <p class="drink-desc" style="color: var(--color-text-muted); font-size: 0.95rem; line-height: 1.6; margin: 0;">Our slow-steeped cold brew infused with nitrogen on tap, creating a silky-smooth texture with a naturally sweet taste and creamy head.</p>
+              <div class="menu-item-info">
+                <h4 class="menu-item-name">Italian Macchiato</h4>
               </div>
             </div>
           </div>
-
-          <!-- Classic Selection Subsection -->
-          <!-- Classic Selection Subsection -->
-          <div class="menu-grid-header animate-on-scroll text-center" style="margin-top: 60px; margin-bottom: 30px; width: 100%; text-align: center;">
-            <h2 class="section-title" style="margin-bottom: 12px; text-align: center;">Classic Selection</h2>
-            <p class="section-desc" style="max-width: 600px; margin: 0 auto; color: var(--color-text-muted); text-align: center;">Expertly brewed classic and specialty beverages</p>
-          </div>
-          
-          <div class="grid-3 animate-on-scroll" style="margin-bottom: 60px; width: 100%;">
-            <!-- Drink Item: Americano -->
-            <div class="glass-card drink-card animate-on-scroll stagger-1">
-              <div class="drink-img-wrapper hot-steam">
-                <img src="americano-new.webp" alt="Americano" class="drink-img">
-              </div>
-              <div class="drink-info" style="padding: 24px; text-align: left;">
-                <span class="drink-meta" style="font-size: 0.85rem; font-weight: 600; text-transform: uppercase; color: var(--color-terracotta); letter-spacing: 0.05em; display: block; margin-bottom: 8px;">Espresso Classic</span>
-                <h3 class="drink-name" style="font-family: var(--font-serif); font-size: 1.4rem; font-weight: 600; color: var(--color-dark); margin-bottom: 12px;">Americano</h3>
-                <p class="drink-desc" style="color: var(--color-text-muted); font-size: 0.95rem; line-height: 1.6; margin: 0;">A classic espresso shot lengthened with hot water, delivering a clean, bold coffee flavor.</p>
-              </div>
-            </div>
-            <!-- Drink Item: Cafe Con Leche -->
-            <div class="glass-card drink-card animate-on-scroll stagger-2">
-              <div class="drink-img-wrapper hot-steam">
-                <img src="cafe-con-leche-vertical.webp" alt="Cafe Con Leche" class="drink-img">
-              </div>
-              <div class="drink-info" style="padding: 24px; text-align: left;">
-                <span class="drink-meta" style="font-size: 0.85rem; font-weight: 600; text-transform: uppercase; color: var(--color-terracotta); letter-spacing: 0.05em; display: block; margin-bottom: 8px;">Espresso Classic</span>
-                <h3 class="drink-name" style="font-family: var(--font-serif); font-size: 1.4rem; font-weight: 600; color: var(--color-dark); margin-bottom: 12px;">Cafe Con Leche</h3>
-                <p class="drink-desc" style="color: var(--color-text-muted); font-size: 0.95rem; line-height: 1.6; margin: 0;">Rich, freshly pulled espresso combined with warm steamed milk, served sweet or unsweet.</p>
-              </div>
-            </div>
-            <!-- Drink Item: Cafe Mocha -->
-            <div class="glass-card drink-card animate-on-scroll stagger-3">
-              <div class="drink-img-wrapper hot-steam">
-                <img src="cafe-mocha-vertical.webp" alt="Cafe Mocha" class="drink-img">
-              </div>
-              <div class="drink-info" style="padding: 24px; text-align: left;">
-                <span class="drink-meta" style="font-size: 0.85rem; font-weight: 600; text-transform: uppercase; color: var(--color-terracotta); letter-spacing: 0.05em; display: block; margin-bottom: 8px;">Chocolate Treat</span>
-                <h3 class="drink-name" style="font-family: var(--font-serif); font-size: 1.4rem; font-weight: 600; color: var(--color-dark); margin-bottom: 12px;">Cafe Mocha</h3>
-                <p class="drink-desc" style="color: var(--color-text-muted); font-size: 0.95rem; line-height: 1.6; margin: 0;">Decadent dark chocolate melted into freshly pulled espresso and blended with creamy steamed milk.</p>
-              </div>
-            </div>
-            <!-- Drink Item: Cinnamon Toast Latte -->
-            <div class="glass-card drink-card animate-on-scroll stagger-1">
-              <div class="drink-img-wrapper hot-steam">
-                <img src="cinnamon-toast-latte-vertical.webp" alt="Cinnamon Toast Latte" class="drink-img">
-              </div>
-              <div class="drink-info" style="padding: 24px; text-align: left;">
-                <span class="drink-meta" style="font-size: 0.85rem; font-weight: 600; text-transform: uppercase; color: var(--color-terracotta); letter-spacing: 0.05em; display: block; margin-bottom: 8px;">Signature Latte</span>
-                <h3 class="drink-name" style="font-family: var(--font-serif); font-size: 1.4rem; font-weight: 600; color: var(--color-dark); margin-bottom: 12px;">Cinnamon Toast Latte</h3>
-                <p class="drink-desc" style="color: var(--color-text-muted); font-size: 0.95rem; line-height: 1.6; margin: 0;">A cozy latte featuring rich espresso, steamed milk, sweet cinnamon brown sugar syrup, and a pinch of spice.</p>
-              </div>
-            </div>
-            <!-- Drink Item: Drip Coffee -->
-            <div class="glass-card drink-card animate-on-scroll stagger-2">
-              <div class="drink-img-wrapper hot-steam">
-                <img src="drip-coffee-vertical.webp" alt="Drip Coffee" class="drink-img">
-              </div>
-              <div class="drink-info" style="padding: 24px; text-align: left;">
-                <span class="drink-meta" style="font-size: 0.85rem; font-weight: 600; text-transform: uppercase; color: var(--color-terracotta); letter-spacing: 0.05em; display: block; margin-bottom: 8px;">House Brew</span>
-                <h3 class="drink-name" style="font-family: var(--font-serif); font-size: 1.4rem; font-weight: 600; color: var(--color-dark); margin-bottom: 12px;">Drip Coffee</h3>
-                <p class="drink-desc" style="color: var(--color-text-muted); font-size: 0.95rem; line-height: 1.6; margin: 0;">Smooth, freshly brewed drip coffee using our custom-roasted house blend beans.</p>
-              </div>
-            </div>
-            <!-- Drink Item: Honey Haze Latte -->
-            <div class="glass-card drink-card animate-on-scroll stagger-3">
-              <div class="drink-img-wrapper hot-steam">
-                <img src="honey-haze-latte-vertical.webp" alt="Honey Haze Latte" class="drink-img">
-              </div>
-              <div class="drink-info" style="padding: 24px; text-align: left;">
-                <span class="drink-meta" style="font-size: 0.85rem; font-weight: 600; text-transform: uppercase; color: var(--color-terracotta); letter-spacing: 0.05em; display: block; margin-bottom: 8px;">Signature Latte</span>
-                <h3 class="drink-name" style="font-family: var(--font-serif); font-size: 1.4rem; font-weight: 600; color: var(--color-dark); margin-bottom: 12px;">Honey Haze Latte</h3>
-                <p class="drink-desc" style="color: var(--color-text-muted); font-size: 0.95rem; line-height: 1.6; margin: 0;">A golden latte sweetened with organic local honey, a touch of hazelnut syrup, and creamy steamed milk.</p>
-              </div>
-            </div>
-            <!-- Drink Item: Italian Macchiato -->
-            <div class="glass-card drink-card animate-on-scroll stagger-1">
-              <div class="drink-img-wrapper hot-steam">
-                <img src="italian-macchiato-vertical.webp" alt="Italian Macchiato" class="drink-img">
-              </div>
-              <div class="drink-info" style="padding: 24px; text-align: left;">
-                <span class="drink-meta" style="font-size: 0.85rem; font-weight: 600; text-transform: uppercase; color: var(--color-terracotta); letter-spacing: 0.05em; display: block; margin-bottom: 8px;">Espresso Classic</span>
-                <h3 class="drink-name" style="font-family: var(--font-serif); font-size: 1.4rem; font-weight: 600; color: var(--color-dark); margin-bottom: 12px;">Italian Macchiato</h3>
-                <p class="drink-desc" style="color: var(--color-text-muted); font-size: 0.95rem; line-height: 1.6; margin: 0;">A bold shot of espresso marked with a small dollop of velvety milk foam.</p>
-              </div>
-            </div>
-          </div>
-          
-          <!-- Classic Selection Subsection End -->
 
           </div>
       </div>
@@ -488,80 +349,70 @@
                     <a href="kava-ontap-food-menu.webp" download="Quigs-OnTap-Food-Menu.jpg" class="btn btn-primary">Download Seltzer &amp; Food Menu (JPG)</a>
                   </div>
 
-                  <!-- New Kava & Tea Items Section -->
-          <div class="menu-grid-header animate-on-scroll text-center" style="margin-top: 24px; margin-bottom: 40px; width: 100%; text-align: center;">
-            <h2 class="section-title" style="margin-bottom: 12px; text-align: center;">Kava &amp; Tea Additions</h2>
-            <p class="section-desc" style="max-width: 600px; margin: 0 auto; color: var(--color-text-muted); text-align: center;">Explore our premium, relaxing botanical creations, traditionally prepared for a natural calm.</p>
+                  <!-- Drink Highlights Gallery -->
+          <div class="menu-grid-header animate-on-scroll text-center" style="margin-top: 24px; margin-bottom: 0; width: 100%; text-align: center; border-top: 1px solid rgba(43, 26, 19, 0.1); padding-top: 40px;">
+            <h2 class="section-title" style="margin-bottom: 12px; text-align: center;">Drink Highlights</h2>
+            <p class="section-desc" style="max-width: 600px; margin: 0 auto; color: var(--color-text-muted); text-align: center;">Visual gallery of our specialty botanical teas and elixirs</p>
           </div>
-          
-          <div class="grid-3 animate-on-scroll" style="margin-bottom: 80px; width: 100%;">
-            <!-- Kava Shell -->
-            <div class="glass-card drink-card animate-on-scroll stagger-1">
-              <div class="drink-img-wrapper hot-steam">
-                <img src="kava-shell.webp" alt="Kava Shell" class="drink-img">
-                <span class="drink-tag">Traditional Bowl</span>
+
+          <div class="cawfee-menu-grid animate-on-scroll" style="margin-bottom: 80px;">
+            <div class="cawfee-menu-item">
+              <div class="menu-item-image-wrapper">
+                <img src="assets/menu_gallery/menu_euphoric_ktea.webp" alt="Euphoric K-Tea" class="cawfee-menu-img" loading="lazy">
               </div>
-              <div class="drink-info" style="padding: 24px; text-align: left;">
-                <span class="drink-meta" style="font-size: 0.85rem; font-weight: 600; text-transform: uppercase; color: var(--color-terracotta); letter-spacing: 0.05em; display: block; margin-bottom: 8px;">Classic Kava</span>
-                <h3 class="drink-name" style="font-family: var(--font-serif); font-size: 1.4rem; font-weight: 600; color: var(--color-dark); margin-bottom: 12px;">Kava Shell</h3>
-                <p class="drink-desc" style="color: var(--color-text-muted); font-size: 0.95rem; line-height: 1.6; margin: 0;">A traditional bowl of premium kava root powder kneaded in water, offering a clean, relaxing, and mouth-numbing botanical experience.</p>
+              <div class="menu-item-info">
+                <h4 class="menu-item-name">Euphoric K-Tea</h4>
               </div>
             </div>
-
-            <!-- Kava Seltzer -->
-            <div class="glass-card drink-card animate-on-scroll stagger-2">
-              <div class="drink-img-wrapper hot-steam">
-                <img src="kava-seltzer.webp" alt="Kava Seltzer" class="drink-img">
-                <span class="drink-tag">Crisp &amp; Refreshing</span>
+            <div class="cawfee-menu-item">
+              <div class="menu-item-image-wrapper">
+                <img src="assets/menu_gallery/menu_kava_seltzer.webp" alt="Kava Seltzer" class="cawfee-menu-img" loading="lazy">
               </div>
-              <div class="drink-info" style="padding: 24px; text-align: left;">
-                <span class="drink-meta" style="font-size: 0.85rem; font-weight: 600; text-transform: uppercase; color: var(--color-terracotta); letter-spacing: 0.05em; display: block; margin-bottom: 8px;">Botanical Seltzer</span>
-                <h3 class="drink-name" style="font-family: var(--font-serif); font-size: 1.4rem; font-weight: 600; color: var(--color-dark); margin-bottom: 12px;">Kava Seltzer</h3>
-                <p class="drink-desc" style="color: var(--color-text-muted); font-size: 0.95rem; line-height: 1.6; margin: 0;">A bubbly, refreshing seltzer infused with traditional kava extract and a crisp fruit flavor for an easy, light drinking experience.</p>
+              <div class="menu-item-info">
+                <h4 class="menu-item-name">Kava Seltzer</h4>
               </div>
             </div>
-
-            <!-- Euphoric K-Tea -->
-            <div class="glass-card drink-card animate-on-scroll stagger-3">
-              <div class="drink-img-wrapper hot-steam">
-                <img src="euphoric-k-tea.webp" alt="Euphoric K-Tea" class="drink-img">
-                <span class="drink-tag">Smooth &amp; Calming</span>
+            <div class="cawfee-menu-item">
+              <div class="menu-item-image-wrapper">
+                <img src="assets/menu_gallery/menu_1S_ggD_PHyfJWhGehIBVZw_rVr1KQtfVA.webp" alt="Kava Shell" class="cawfee-menu-img" loading="lazy">
               </div>
-              <div class="drink-info" style="padding: 24px; text-align: left;">
-                <span class="drink-meta" style="font-size: 0.85rem; font-weight: 600; text-transform: uppercase; color: var(--color-terracotta); letter-spacing: 0.05em; display: block; margin-bottom: 8px;">Brewed Tea</span>
-                <h3 class="drink-name" style="font-family: var(--font-serif); font-size: 1.4rem; font-weight: 600; color: var(--color-dark); margin-bottom: 12px;">Euphoric K-Tea</h3>
-                <p class="drink-desc" style="color: var(--color-text-muted); font-size: 0.95rem; line-height: 1.6; margin: 0;">Our signature brewed kratom tea blend served chilled, offering a smooth botanical taste and clean, clear-headed calm.</p>
+              <div class="menu-item-info">
+                <h4 class="menu-item-name">Kava Shell</h4>
               </div>
             </div>
-
-            <!-- Purple Haze -->
-            <div class="glass-card drink-card animate-on-scroll stagger-1">
-              <div class="drink-img-wrapper hot-steam">
-                <img src="purple-haze.webp" alt="Purple Haze" class="drink-img">
-                <span class="drink-tag">Citrus Twist</span>
+            <div class="cawfee-menu-item">
+              <div class="menu-item-image-wrapper">
+                <img src="assets/menu_gallery/menu_mitra9_seltzer.webp" alt="Mitra 9 K-Tea Seltzer" class="cawfee-menu-img" loading="lazy">
               </div>
-              <div class="drink-info" style="padding: 24px; text-align: left;">
-                <span class="drink-meta" style="font-size: 0.85rem; font-weight: 600; text-transform: uppercase; color: var(--color-terracotta); letter-spacing: 0.05em; display: block; margin-bottom: 8px;">Vibrant Mocktail</span>
-                <h3 class="drink-name" style="font-family: var(--font-serif); font-size: 1.4rem; font-weight: 600; color: var(--color-dark); margin-bottom: 12px;">Purple Haze</h3>
-                <p class="drink-desc" style="color: var(--color-text-muted); font-size: 0.95rem; line-height: 1.6; margin: 0;">A vibrant, sweet botanical mocktail seltzer with a deep purple hue, citrus twist, and calming natural herbal extracts.</p>
+              <div class="menu-item-info">
+                <h4 class="menu-item-name">Mitra 9 K-Tea Seltzer</h4>
               </div>
             </div>
-
-            <!-- White Rabbit K-Tea Seltzer -->
-            <div class="glass-card drink-card animate-on-scroll stagger-2">
-              <div class="drink-img-wrapper hot-steam">
-                <img src="white-rabbit-k-tea-seltzer.webp" alt="White Rabbit K-Tea Seltzers" class="drink-img">
-                <span class="drink-tag">Social Energy</span>
+            <div class="cawfee-menu-item">
+              <div class="menu-item-image-wrapper">
+                <img src="assets/menu_gallery/menu_1lZpMuatrkQrT-gE7dZcc80iLhLya3esH.webp" alt="Purple Haze" class="cawfee-menu-img" loading="lazy">
               </div>
-              <div class="drink-info" style="padding: 24px; text-align: left;">
-                <span class="drink-meta" style="font-size: 0.85rem; font-weight: 600; text-transform: uppercase; color: var(--color-terracotta); letter-spacing: 0.05em; display: block; margin-bottom: 8px;">Premium Cans</span>
-                <h3 class="drink-name" style="font-family: var(--font-serif); font-size: 1.4rem; font-weight: 600; color: var(--color-dark); margin-bottom: 12px;">White Rabbit Seltzer</h3>
-                <p class="drink-desc" style="color: var(--color-text-muted); font-size: 0.95rem; line-height: 1.6; margin: 0;">Premium canned White Rabbit kratom seltzers, zero sugar and zero alcohol, infused with natural fruit flavors for smooth, social energy.</p>
+              <div class="menu-item-info">
+                <h4 class="menu-item-name">Purple Haze</h4>
+              </div>
+            </div>
+            <div class="cawfee-menu-item">
+              <div class="menu-item-image-wrapper">
+                <img src="assets/menu_gallery/menu_white_rabbit_seltzer.webp" alt="White Rabbit K-Tea Seltzer" class="cawfee-menu-img" loading="lazy">
+              </div>
+              <div class="menu-item-info">
+                <h4 class="menu-item-name">White Rabbit K-Tea Seltzer</h4>
+              </div>
+            </div>
+            <div class="cawfee-menu-item">
+              <div class="menu-item-image-wrapper">
+                <img src="assets/menu_gallery/menu_witches_brew.webp" alt="Witches Brew" class="cawfee-menu-img" loading="lazy">
+              </div>
+              <div class="menu-item-info">
+                <h4 class="menu-item-name">Witches Brew</h4>
               </div>
             </div>
           </div>
-
-
 
       </div>
       </div>
@@ -580,109 +431,90 @@
           
           
           <!-- Centered Header -->
-          <div class="menu-grid-header animate-on-scroll text-center" style="margin-top: 24px; margin-bottom: 40px; width: 100%; text-align: center;">
+          <div class="menu-grid-header animate-on-scroll text-center" style="margin-top: 24px; margin-bottom: 0; width: 100%; text-align: center;">
             <h2 class="section-title" style="margin-bottom: 12px; text-align: center;">Bakery &amp; Bites</h2>
-            <p class="section-desc" style="max-width: 600px; margin: 0 auto; color: var(--color-text-muted); text-align: center;">Decadent pastries, warm bakery items, and sweet treats to perfectly pair with your favorite brew.</p>
+            <p class="section-desc" style="max-width: 600px; margin: 0 auto; color: var(--color-text-muted); text-align: center;">Fresh pastries, sweet treats, and savory highlights from our lounge</p>
           </div>
-          
-          <div class="grid-3 animate-on-scroll" style="margin-bottom: 80px; width: 100%;">
-            <!-- Food Item: Blueberry Cheesecake Muffin -->
-            <div class="glass-card drink-card animate-on-scroll stagger-1">
-              <div class="drink-img-wrapper">
-                <img src="blueberry-muffin-vertical.webp" alt="Blueberry Cheesecake Muffin" class="drink-img">
+
+          <div class="cawfee-menu-grid animate-on-scroll" style="margin-bottom: 80px;">
+            <div class="cawfee-menu-item">
+              <div class="menu-item-image-wrapper">
+                <img src="assets/menu_gallery/menu_1PNczul9fRbEcHkASrl6vyJTa8guqUt46.webp" alt="Blueberry Cheesecake Muffin" class="cawfee-menu-img" loading="lazy">
               </div>
-              <div class="drink-info" style="padding: 24px; text-align: left;">
-                <span class="drink-meta" style="font-size: 0.85rem; font-weight: 600; text-transform: uppercase; color: var(--color-terracotta); letter-spacing: 0.05em; display: block; margin-bottom: 8px;">Fresh Bakery</span>
-                <h3 class="drink-name" style="font-family: var(--font-serif); font-size: 1.4rem; font-weight: 600; color: var(--color-dark); margin-bottom: 12px;">Blueberry Cheesecake Muffin</h3>
-                <p class="drink-desc" style="color: var(--color-text-muted); font-size: 0.95rem; line-height: 1.6; margin: 0;">A moist, delicious blueberry muffin with a cream cheese filling and sweet streusel crumb topping.</p>
+              <div class="menu-item-info">
+                <h4 class="menu-item-name">Blueberry Cheesecake Muffin</h4>
               </div>
             </div>
-            <!-- Food Item: Breakfast Wrap -->
-            <div class="glass-card drink-card animate-on-scroll stagger-2">
-              <div class="drink-img-wrapper">
-                <img src="breakfast-wrap-vertical.webp" alt="Breakfast Wrap" class="drink-img">
+            <div class="cawfee-menu-item">
+              <div class="menu-item-image-wrapper">
+                <img src="assets/menu_gallery/menu_1aea2HqAlKQoynl-O3VcTEtf8z7HJ-tDf.webp" alt="Blueberry Muffin" class="cawfee-menu-img" loading="lazy">
               </div>
-              <div class="drink-info" style="padding: 24px; text-align: left;">
-                <span class="drink-meta" style="font-size: 0.85rem; font-weight: 600; text-transform: uppercase; color: var(--color-terracotta); letter-spacing: 0.05em; display: block; margin-bottom: 8px;">Savory Wrap</span>
-                <h3 class="drink-name" style="font-family: var(--font-serif); font-size: 1.4rem; font-weight: 600; color: var(--color-dark); margin-bottom: 12px;">Breakfast Wrap</h3>
-                <p class="drink-desc" style="color: var(--color-text-muted); font-size: 0.95rem; line-height: 1.6; margin: 0;">A delicious, warm breakfast wrap packed with fluffy scrambled eggs, crisp bacon, and melted cheddar cheese wrapped in a soft flour tortilla.</p>
+              <div class="menu-item-info">
+                <h4 class="menu-item-name">Blueberry Muffin</h4>
               </div>
             </div>
-            <!-- Food Item: Cinnamon Bun -->
-            <div class="glass-card drink-card animate-on-scroll stagger-3">
-              <div class="drink-img-wrapper">
-                <img src="cinnamon-bun-vertical.webp" alt="Cinnamon Bun" class="drink-img">
+            <div class="cawfee-menu-item">
+              <div class="menu-item-image-wrapper">
+                <img src="assets/menu_gallery/menu_1qdmkOanqkFQEg5b864qWXQrpEZP_Iert.webp" alt="Breakfast Wrap" class="cawfee-menu-img" loading="lazy">
               </div>
-              <div class="drink-info" style="padding: 24px; text-align: left;">
-                <span class="drink-meta" style="font-size: 0.85rem; font-weight: 600; text-transform: uppercase; color: var(--color-terracotta); letter-spacing: 0.05em; display: block; margin-bottom: 8px;">Fresh Bakery</span>
-                <h3 class="drink-name" style="font-family: var(--font-serif); font-size: 1.4rem; font-weight: 600; color: var(--color-dark); margin-bottom: 12px;">Cinnamon Bun</h3>
-                <p class="drink-desc" style="color: var(--color-text-muted); font-size: 0.95rem; line-height: 1.6; margin: 0;">A warm, soft, fluffy cinnamon roll glazed with rich cream cheese frosting.</p>
+              <div class="menu-item-info">
+                <h4 class="menu-item-name">Breakfast Wrap</h4>
               </div>
             </div>
-            <!-- Food Item: Cinnamon Crumb Muffin -->
-            <div class="glass-card drink-card animate-on-scroll stagger-1">
-              <div class="drink-img-wrapper">
-                <img src="cinnamon-crumb-muffin-vertical.webp" alt="Cinnamon Crumb Muffin" class="drink-img">
+            <div class="cawfee-menu-item">
+              <div class="menu-item-image-wrapper">
+                <img src="assets/menu_gallery/menu_1aCtTrUt2zA_66y0KPkn_mCsGG8lzzMCe.webp" alt="Cinnamon Bun" class="cawfee-menu-img" loading="lazy">
               </div>
-              <div class="drink-info" style="padding: 24px; text-align: left;">
-                <span class="drink-meta" style="font-size: 0.85rem; font-weight: 600; text-transform: uppercase; color: var(--color-terracotta); letter-spacing: 0.05em; display: block; margin-bottom: 8px;">Fresh Bakery</span>
-                <h3 class="drink-name" style="font-family: var(--font-serif); font-size: 1.4rem; font-weight: 600; color: var(--color-dark); margin-bottom: 12px;">Cinnamon Crumb Muffin</h3>
-                <p class="drink-desc" style="color: var(--color-text-muted); font-size: 0.95rem; line-height: 1.6; margin: 0;">A bakery-style muffin with a rich cinnamon swirl and topped with powdered sugar.</p>
+              <div class="menu-item-info">
+                <h4 class="menu-item-name">Cinnamon Bun</h4>
               </div>
             </div>
-            <!-- Food Item: Cuban Sandwich -->
-            <div class="glass-card drink-card animate-on-scroll stagger-2">
-              <div class="drink-img-wrapper">
-                <img src="cuban-sandwich-vertical.webp" alt="Cuban Sandwich" class="drink-img">
+            <div class="cawfee-menu-item">
+              <div class="menu-item-image-wrapper">
+                <img src="assets/menu_gallery/menu_1LvrkKQZwuqRrNiwS0YkM_d7Hg7zDmQdf.webp" alt="Cinnamon Crumb Muffin" class="cawfee-menu-img" loading="lazy">
               </div>
-              <div class="drink-info" style="padding: 24px; text-align: left;">
-                <span class="drink-meta" style="font-size: 0.85rem; font-weight: 600; text-transform: uppercase; color: var(--color-terracotta); letter-spacing: 0.05em; display: block; margin-bottom: 8px;">Warm Sandwich</span>
-                <h3 class="drink-name" style="font-family: var(--font-serif); font-size: 1.4rem; font-weight: 600; color: var(--color-dark); margin-bottom: 12px;">Cuban Sandwich</h3>
-                <p class="drink-desc" style="color: var(--color-text-muted); font-size: 0.95rem; line-height: 1.6; margin: 0;">A classic pressed Cuban sandwich with slow-roasted pork, ham, Swiss cheese, pickles, and mustard on authentic Cuban bread.</p>
+              <div class="menu-item-info">
+                <h4 class="menu-item-name">Cinnamon Crumb Muffin</h4>
               </div>
             </div>
-            <!-- Food Item: Garden Turkey Sandwich -->
-            <div class="glass-card drink-card animate-on-scroll stagger-3">
-              <div class="drink-img-wrapper">
-                <img src="garden-turkey-sandwich-vertical.webp" alt="Garden Turkey Sandwich" class="drink-img">
+            <div class="cawfee-menu-item">
+              <div class="menu-item-image-wrapper">
+                <img src="assets/menu_gallery/menu_1ezlRxY3iG68ezfsBaWTxRxKEpxDP-DU5.webp" alt="Cuban Sandwich" class="cawfee-menu-img" loading="lazy">
               </div>
-              <div class="drink-info" style="padding: 24px; text-align: left;">
-                <span class="drink-meta" style="font-size: 0.85rem; font-weight: 600; text-transform: uppercase; color: var(--color-terracotta); letter-spacing: 0.05em; display: block; margin-bottom: 8px;">Fresh Sandwich</span>
-                <h3 class="drink-name" style="font-family: var(--font-serif); font-size: 1.4rem; font-weight: 600; color: var(--color-dark); margin-bottom: 12px;">Garden Turkey Sandwich</h3>
-                <p class="drink-desc" style="color: var(--color-text-muted); font-size: 0.95rem; line-height: 1.6; margin: 0;">Sliced turkey breast, Swiss cheese, fresh greens, tomato, and a spread of pesto on fresh bread.</p>
+              <div class="menu-item-info">
+                <h4 class="menu-item-name">Cuban Sandwich</h4>
               </div>
             </div>
-            <!-- Food Item: Ham Swiss Egg Croissant -->
-            <div class="glass-card drink-card animate-on-scroll stagger-1">
-              <div class="drink-img-wrapper">
-                <img src="ham-swiss-egg-croissant-vertical.webp" alt="Ham Swiss Egg Croissant" class="drink-img">
+            <div class="cawfee-menu-item">
+              <div class="menu-item-image-wrapper">
+                <img src="assets/menu_gallery/menu_1tT17VIn3Cbv83VxeJf9W5P1INHXwjUVL.webp" alt="Garden Turkey Sandwich" class="cawfee-menu-img" loading="lazy">
               </div>
-              <div class="drink-info" style="padding: 24px; text-align: left;">
-                <span class="drink-meta" style="font-size: 0.85rem; font-weight: 600; text-transform: uppercase; color: var(--color-terracotta); letter-spacing: 0.05em; display: block; margin-bottom: 8px;">Savory Croissant</span>
-                <h3 class="drink-name" style="font-family: var(--font-serif); font-size: 1.4rem; font-weight: 600; color: var(--color-dark); margin-bottom: 12px;">Ham Swiss Egg Croissant</h3>
-                <p class="drink-desc" style="color: var(--color-text-muted); font-size: 0.95rem; line-height: 1.6; margin: 0;">Warm, flaky butter croissant loaded with sliced ham, fluffy eggs, and melted Swiss cheese.</p>
+              <div class="menu-item-info">
+                <h4 class="menu-item-name">Garden Turkey Sandwich</h4>
               </div>
             </div>
-            <!-- Food Item: Ham Swiss & Egg Croissant w/ Syrup -->
-            <div class="glass-card drink-card animate-on-scroll stagger-2">
-              <div class="drink-img-wrapper">
-                <img src="ham-swiss-egg-croissant-syrup-vertical.webp" alt="Ham Swiss & Egg Croissant w/ Syrup" class="drink-img">
+            <div class="cawfee-menu-item">
+              <div class="menu-item-image-wrapper">
+                <img src="assets/menu_gallery/menu_1dagGY3QDAqxS_Cr-rn8UBDkw6D7A5eHY.webp" alt="Ham & Swiss Egg Croissant" class="cawfee-menu-img" loading="lazy">
               </div>
-              <div class="drink-info" style="padding: 24px; text-align: left;">
-                <span class="drink-meta" style="font-size: 0.85rem; font-weight: 600; text-transform: uppercase; color: var(--color-terracotta); letter-spacing: 0.05em; display: block; margin-bottom: 8px;">Savory Croissant</span>
-                <h3 class="drink-name" style="font-family: var(--font-serif); font-size: 1.4rem; font-weight: 600; color: var(--color-dark); margin-bottom: 12px;">Ham Swiss & Egg Croissant w/ Syrup</h3>
-                <p class="drink-desc" style="color: var(--color-text-muted); font-size: 0.95rem; line-height: 1.6; margin: 0;">Our signature ham, egg, and Swiss croissant served with sweet maple syrup for dipping.</p>
+              <div class="menu-item-info">
+                <h4 class="menu-item-name">Ham &amp; Swiss Egg Croissant</h4>
               </div>
             </div>
-            <!-- Food Item: Pistachio Muffin -->
-            <div class="glass-card drink-card animate-on-scroll stagger-3">
-              <div class="drink-img-wrapper">
-                <img src="pistachio-muffin-vertical.webp" alt="Pistachio Muffin" class="drink-img">
+            <div class="cawfee-menu-item">
+              <div class="menu-item-image-wrapper">
+                <img src="assets/menu_gallery/menu_1kBwm4jNRfsUFgtah2dRKPqUkWHXl2Plp.webp" alt="Ham & Swiss Egg Croissant with Syrup" class="cawfee-menu-img" loading="lazy">
               </div>
-              <div class="drink-info" style="padding: 24px; text-align: left;">
-                <span class="drink-meta" style="font-size: 0.85rem; font-weight: 600; text-transform: uppercase; color: var(--color-terracotta); letter-spacing: 0.05em; display: block; margin-bottom: 8px;">Fresh Bakery</span>
-                <h3 class="drink-name" style="font-family: var(--font-serif); font-size: 1.4rem; font-weight: 600; color: var(--color-dark); margin-bottom: 12px;">Pistachio Muffin</h3>
-                <p class="drink-desc" style="color: var(--color-text-muted); font-size: 0.95rem; line-height: 1.6; margin: 0;">A uniquely sweet and nutty pistachio muffin, baked to golden perfection with a crunchy topping.</p>
+              <div class="menu-item-info">
+                <h4 class="menu-item-name">Ham &amp; Swiss Egg Croissant with Syrup</h4>
+              </div>
+            </div>
+            <div class="cawfee-menu-item">
+              <div class="menu-item-image-wrapper">
+                <img src="assets/menu_gallery/menu_1buO3ES5c1id9fCcZHZ9TTS8dO0B7sAw-.webp" alt="Pistachio Muffin" class="cawfee-menu-img" loading="lazy">
+              </div>
+              <div class="menu-item-info">
+                <h4 class="menu-item-name">Pistachio Muffin</h4>
               </div>
             </div>
           </div>
