@@ -1007,6 +1007,11 @@ body.nav-open {
     height: 400px;
   }
   
+  /* Adjust large team photo on mobile */
+  .hero-image-wrapper[style*="700px"] {
+    height: 500px !important;
+  }
+
   .grid-3, .schedule-tabs {
     grid-template-columns: 1fr;
   }
