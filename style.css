@@ -386,6 +386,11 @@ body.nav-open {
   box-shadow: var(--shadow-lg);
 }
 
+/* Team photo specific positioning - ensure all faces visible */
+.hero-image[src*="team-photo-2026"] {
+  object-position: center 30%;
+}
+
 .hero-image-mask {
   position: absolute;
   top: -20px;
